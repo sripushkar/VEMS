@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FAFA067622DA4B7400E1AEC2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA067522DA4B7400E1AEC2 /* AppDelegate.swift */; };
+		FAFA067822DA4B7400E1AEC2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA067722DA4B7400E1AEC2 /* ViewController.swift */; };
+		FAFA067B22DA4B7400E1AEC2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFA067922DA4B7400E1AEC2 /* Main.storyboard */; };
+		FAFA067D22DA4B7500E1AEC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAFA067C22DA4B7500E1AEC2 /* Assets.xcassets */; };
+		FAFA068022DA4B7500E1AEC2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAFA067E22DA4B7500E1AEC2 /* LaunchScreen.storyboard */; };
+		FAFA068B22DA4B7500E1AEC2 /* VEMSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA068A22DA4B7500E1AEC2 /* VEMSTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAFA068722DA4B7500E1AEC2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAFA066A22DA4B7400E1AEC2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAFA067122DA4B7400E1AEC2;
+			remoteInfo = VEMS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FAFA067222DA4B7400E1AEC2 /* VEMS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VEMS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAFA067522DA4B7400E1AEC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAFA067722DA4B7400E1AEC2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FAFA067A22DA4B7400E1AEC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAFA067C22DA4B7500E1AEC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAFA067F22DA4B7500E1AEC2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAFA068122DA4B7500E1AEC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAFA068622DA4B7500E1AEC2 /* VEMSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VEMSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAFA068A22DA4B7500E1AEC2 /* VEMSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VEMSTests.swift; sourceTree = "<group>"; };
+		FAFA068C22DA4B7500E1AEC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAFA066F22DA4B7400E1AEC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAFA068322DA4B7500E1AEC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAFA066922DA4B7400E1AEC2 = {
+			isa = PBXGroup;
+			children = (
+				FAFA067422DA4B7400E1AEC2 /* VEMS */,
+				FAFA068922DA4B7500E1AEC2 /* VEMSTests */,
+				FAFA067322DA4B7400E1AEC2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAFA067322DA4B7400E1AEC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAFA067222DA4B7400E1AEC2 /* VEMS.app */,
+				FAFA068622DA4B7500E1AEC2 /* VEMSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAFA067422DA4B7400E1AEC2 /* VEMS */ = {
+			isa = PBXGroup;
+			children = (
+				FAFA067522DA4B7400E1AEC2 /* AppDelegate.swift */,
+				FAFA067722DA4B7400E1AEC2 /* ViewController.swift */,
+				FAFA067922DA4B7400E1AEC2 /* Main.storyboard */,
+				FAFA067C22DA4B7500E1AEC2 /* Assets.xcassets */,
+				FAFA067E22DA4B7500E1AEC2 /* LaunchScreen.storyboard */,
+				FAFA068122DA4B7500E1AEC2 /* Info.plist */,
+			);
+			path = VEMS;
+			sourceTree = "<group>";
+		};
+		FAFA068922DA4B7500E1AEC2 /* VEMSTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAFA068A22DA4B7500E1AEC2 /* VEMSTests.swift */,
+				FAFA068C22DA4B7500E1AEC2 /* Info.plist */,
+			);
+			path = VEMSTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAFA067122DA4B7400E1AEC2 /* VEMS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAFA068F22DA4B7500E1AEC2 /* Build configuration list for PBXNativeTarget "VEMS" */;
+			buildPhases = (
+				FAFA066E22DA4B7400E1AEC2 /* Sources */,
+				FAFA066F22DA4B7400E1AEC2 /* Frameworks */,
+				FAFA067022DA4B7400E1AEC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VEMS;
+			productName = VEMS;
+			productReference = FAFA067222DA4B7400E1AEC2 /* VEMS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAFA068522DA4B7500E1AEC2 /* VEMSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAFA069222DA4B7500E1AEC2 /* Build configuration list for PBXNativeTarget "VEMSTests" */;
+			buildPhases = (
+				FAFA068222DA4B7500E1AEC2 /* Sources */,
+				FAFA068322DA4B7500E1AEC2 /* Frameworks */,
+				FAFA068422DA4B7500E1AEC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAFA068822DA4B7500E1AEC2 /* PBXTargetDependency */,
+			);
+			name = VEMSTests;
+			productName = VEMSTests;
+			productReference = FAFA068622DA4B7500E1AEC2 /* VEMSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAFA066A22DA4B7400E1AEC2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Volunteers;
+				TargetAttributes = {
+					FAFA067122DA4B7400E1AEC2 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					FAFA068522DA4B7500E1AEC2 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = FAFA067122DA4B7400E1AEC2;
+					};
+				};
+			};
+			buildConfigurationList = FAFA066D22DA4B7400E1AEC2 /* Build configuration list for PBXProject "VEMS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAFA066922DA4B7400E1AEC2;
+			productRefGroup = FAFA067322DA4B7400E1AEC2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAFA067122DA4B7400E1AEC2 /* VEMS */,
+				FAFA068522DA4B7500E1AEC2 /* VEMSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAFA067022DA4B7400E1AEC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAFA068022DA4B7500E1AEC2 /* LaunchScreen.storyboard in Resources */,
+				FAFA067D22DA4B7500E1AEC2 /* Assets.xcassets in Resources */,
+				FAFA067B22DA4B7400E1AEC2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAFA068422DA4B7500E1AEC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAFA066E22DA4B7400E1AEC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAFA067822DA4B7400E1AEC2 /* ViewController.swift in Sources */,
+				FAFA067622DA4B7400E1AEC2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAFA068222DA4B7500E1AEC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAFA068B22DA4B7500E1AEC2 /* VEMSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAFA068822DA4B7500E1AEC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAFA067122DA4B7400E1AEC2 /* VEMS */;
+			targetProxy = FAFA068722DA4B7500E1AEC2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FAFA067922DA4B7400E1AEC2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAFA067A22DA4B7400E1AEC2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FAFA067E22DA4B7500E1AEC2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAFA067F22DA4B7500E1AEC2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAFA068D22DA4B7500E1AEC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAFA068E22DA4B7500E1AEC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAFA069022DA4B7500E1AEC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5HWSUD667W;
+				INFOPLIST_FILE = VEMS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.srijulapally.VEMS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FAFA069122DA4B7500E1AEC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5HWSUD667W;
+				INFOPLIST_FILE = VEMS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.srijulapally.VEMS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FAFA069322DA4B7500E1AEC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5HWSUD667W;
+				INFOPLIST_FILE = VEMSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.srijulapally.VEMSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VEMS.app/VEMS";
+			};
+			name = Debug;
+		};
+		FAFA069422DA4B7500E1AEC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5HWSUD667W;
+				INFOPLIST_FILE = VEMSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.srijulapally.VEMSTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VEMS.app/VEMS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAFA066D22DA4B7400E1AEC2 /* Build configuration list for PBXProject "VEMS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAFA068D22DA4B7500E1AEC2 /* Debug */,
+				FAFA068E22DA4B7500E1AEC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAFA068F22DA4B7500E1AEC2 /* Build configuration list for PBXNativeTarget "VEMS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAFA069022DA4B7500E1AEC2 /* Debug */,
+				FAFA069122DA4B7500E1AEC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAFA069222DA4B7500E1AEC2 /* Build configuration list for PBXNativeTarget "VEMSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAFA069322DA4B7500E1AEC2 /* Debug */,
+				FAFA069422DA4B7500E1AEC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAFA066A22DA4B7400E1AEC2 /* Project object */;
+}
