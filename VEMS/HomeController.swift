@@ -76,11 +76,14 @@ class HomeController: UIViewController {
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "065 Burning Spring.png")!)
         
         navigationItem.title = "Welcome to VEMS"
-        /*
+        
+        
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "baseline_arrow_back_white_24dp"), style: .plain, target: self, action: #selector(handleSignOut))
+        /*
         navigationItem.leftBarButtonItem?.tintColor = .white
-        navigationController?.navigationBar.barTintColor = UIColor(white: 1, alpha: 0.0)
+        navigationController?.navigationBar.barTintColor = UIColor.magenta
         */
+        
         view.addSubview(welcomeLabel)
         welcomeLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         welcomeLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true

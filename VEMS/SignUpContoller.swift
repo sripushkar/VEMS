@@ -134,6 +134,12 @@ class SignUpController: UIViewController {
             
             if let error = error{
                 print("Failed to sign user up with error: ", error.localizedDescription)
+                //ERROR POPUP HERE
+                let alert = UIAlertController(title: "My Alert", message: "This is an alert.", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+                    NSLog("The \"OK\" alert occured.")
+                }))
+                self.present(alert, animated: true, completion: nil)
                 return
             }
             
