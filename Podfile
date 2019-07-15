@@ -7,8 +7,9 @@ target 'VEMS' do
 
   # Pods for VEMS
   pod 'Firebase/Core'
+  pod 'FirebaseUI/Auth'
+  pod 'Firebase/Database'
   pod 'Firebase/Firestore'
-  
 
   target 'VEMSTests' do
     inherit! :search_paths
