@@ -131,6 +131,7 @@ class LoginController: UIViewController {
     // MARK: - Helper Functions
     
     func configureViewComponents() {
+        //SETS BACKGROUND COLOR, NEED TO CHANGE TO GRADIENT IMAGE
         view.backgroundColor = UIColor.mainBlue()
         navigationController?.navigationBar.isHidden = true
         //ADDING SUBVIEWS AND CONSTRAINTS
