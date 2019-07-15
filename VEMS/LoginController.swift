@@ -131,7 +131,7 @@ class LoginController: UIViewController {
     // MARK: - Helper Functions
     
     func configureViewComponents() {
-        view.backgroundColor = UIColor.mainBlue()
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "065 Burning Spring.png")!)
         navigationController?.navigationBar.isHidden = true
         //ADDING SUBVIEWS AND CONSTRAINTS
         view.addSubview(logoImageView)
