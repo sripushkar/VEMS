@@ -56,7 +56,7 @@ class LoginController: UIViewController {
     lazy var dividerView: UIView = {
         let dividerView = UIView()
         
-        let label = UILabel()
+       /* let label = UILabel()
         label.text = "OR"
         label.textColor = UIColor(white: 1, alpha: 0.88)
         label.font = UIFont.systemFont(ofSize: 14)
@@ -64,7 +64,8 @@ class LoginController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.centerYAnchor.constraint(equalTo: dividerView.centerYAnchor).isActive = true
         label.centerXAnchor.constraint(equalTo: dividerView.centerXAnchor).isActive = true
-        
+ 
+ 
         let separator1 = UIView()
         separator1.backgroundColor = UIColor(white: 1, alpha: 0.88)
         dividerView.addSubview(separator1)
@@ -76,8 +77,9 @@ class LoginController: UIViewController {
         dividerView.addSubview(separator2)
         separator2.anchor(top: nil, left: label.rightAnchor, bottom: nil, right: dividerView.rightAnchor, paddingTop: 0, paddingLeft: 8, paddingBottom: 0, paddingRight: 8, width: 0, height: 1.0)
         separator2.centerYAnchor.constraint(equalTo: dividerView.centerYAnchor).isActive = true
-        
+        */
         return dividerView
+ 
     }()
     
     
