@@ -11,8 +11,6 @@ target 'VEMS' do
   pod 'Firebase/Database'
   pod 'Firebase/Firestore'
   pod 'Firebase/Analytics'
-  pod 'Firebase/MLVision'
-  pod 'Firebase/MLVisionBarcodeModel'
 
   target 'VEMSTests' do
     inherit! :search_paths

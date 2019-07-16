@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0BDB7B8422DD833C00711D1D /* Homepage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BDB7B8322DD833C00711D1D /* Homepage.storyboard */; };
-		8A27A1D54CE30C6A21C8CE0E /* Pods_VEMSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F4514E2017F870BB05C817C /* Pods_VEMSTests.framework */; };
-		D3F6AA58046B14D1DF2D36BE /* Pods_VEMS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBB8CCAA8638E169691B2BD /* Pods_VEMS.framework */; };
+		E528FB44814884C1E30A5983 /* Pods_VEMS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 597BC0D15ACB8CBDEC96419A /* Pods_VEMS.framework */; };
+		EFD4254C7C5DE1E7B05101EF /* Pods_VEMSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED225BAF138D8A8BC6FF61C /* Pods_VEMSTests.framework */; };
 		FAAF5B1822DA4CC400159208 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA067522DA4B7400E1AEC2 /* AppDelegate.swift */; };
 		FAAF5B1922DA4CC800159208 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA067522DA4B7400E1AEC2 /* AppDelegate.swift */; };
 		FAAF5B1E22DA88E600159208 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAF5B1D22DA88E600159208 /* LoginController.swift */; };
@@ -38,12 +38,11 @@
 
 /* Begin PBXFileReference section */
 		0BDB7B8322DD833C00711D1D /* Homepage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Homepage.storyboard; sourceTree = "<group>"; };
-		1F4514E2017F870BB05C817C /* Pods_VEMSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VEMSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3BD5EEC340F631E05DECBB97 /* Pods-VEMSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VEMSTests.release.xcconfig"; path = "Target Support Files/Pods-VEMSTests/Pods-VEMSTests.release.xcconfig"; sourceTree = "<group>"; };
-		A7C857A7EAB73DA0046719BA /* Pods-VEMS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VEMS.debug.xcconfig"; path = "Target Support Files/Pods-VEMS/Pods-VEMS.debug.xcconfig"; sourceTree = "<group>"; };
-		B5BE32D5210FAFD4AB3C11B5 /* Pods-VEMS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VEMS.release.xcconfig"; path = "Target Support Files/Pods-VEMS/Pods-VEMS.release.xcconfig"; sourceTree = "<group>"; };
-		DCD27A6452CEA48A7D8EA73C /* Pods-VEMSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VEMSTests.debug.xcconfig"; path = "Target Support Files/Pods-VEMSTests/Pods-VEMSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		DFBB8CCAA8638E169691B2BD /* Pods_VEMS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VEMS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E161AA8532D7900A4145EA2 /* Pods-VEMS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VEMS.debug.xcconfig"; path = "Target Support Files/Pods-VEMS/Pods-VEMS.debug.xcconfig"; sourceTree = "<group>"; };
+		3E3312F7CFA3DC3FCCF1D26C /* Pods-VEMSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VEMSTests.debug.xcconfig"; path = "Target Support Files/Pods-VEMSTests/Pods-VEMSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		597BC0D15ACB8CBDEC96419A /* Pods_VEMS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VEMS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8ED225BAF138D8A8BC6FF61C /* Pods_VEMSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VEMSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB15F0C7DEF1E83BA93D04CE /* Pods-VEMSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VEMSTests.release.xcconfig"; path = "Target Support Files/Pods-VEMSTests/Pods-VEMSTests.release.xcconfig"; sourceTree = "<group>"; };
 		FAAF5B1D22DA88E600159208 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		FAF1751222DAA1C500BC112C /* SignUpContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpContoller.swift; sourceTree = "<group>"; };
 		FAF1751422DAA1F200BC112C /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
@@ -59,6 +58,7 @@
 		FAFA068C22DA4B7500E1AEC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAFA069522DA4C4D00E1AEC2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FAFA069822DA4C5500E1AEC2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FE4382E44A10E4C76679BB5C /* Pods-VEMS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VEMS.release.xcconfig"; path = "Target Support Files/Pods-VEMS/Pods-VEMS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3F6AA58046B14D1DF2D36BE /* Pods_VEMS.framework in Frameworks */,
+				E528FB44814884C1E30A5983 /* Pods_VEMS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A27A1D54CE30C6A21C8CE0E /* Pods_VEMSTests.framework in Frameworks */,
+				EFD4254C7C5DE1E7B05101EF /* Pods_VEMSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,19 +84,19 @@
 		46FF596B657D7711AD60815B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A7C857A7EAB73DA0046719BA /* Pods-VEMS.debug.xcconfig */,
-				B5BE32D5210FAFD4AB3C11B5 /* Pods-VEMS.release.xcconfig */,
-				DCD27A6452CEA48A7D8EA73C /* Pods-VEMSTests.debug.xcconfig */,
-				3BD5EEC340F631E05DECBB97 /* Pods-VEMSTests.release.xcconfig */,
+				1E161AA8532D7900A4145EA2 /* Pods-VEMS.debug.xcconfig */,
+				FE4382E44A10E4C76679BB5C /* Pods-VEMS.release.xcconfig */,
+				3E3312F7CFA3DC3FCCF1D26C /* Pods-VEMSTests.debug.xcconfig */,
+				CB15F0C7DEF1E83BA93D04CE /* Pods-VEMSTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		DA10BBCF076FDA7D710D0889 /* Frameworks */ = {
+		99F585FCFDF4D7E0E41D9349 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DFBB8CCAA8638E169691B2BD /* Pods_VEMS.framework */,
-				1F4514E2017F870BB05C817C /* Pods_VEMSTests.framework */,
+				597BC0D15ACB8CBDEC96419A /* Pods_VEMS.framework */,
+				8ED225BAF138D8A8BC6FF61C /* Pods_VEMSTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -108,7 +108,7 @@
 				FAFA068922DA4B7500E1AEC2 /* VEMSTests */,
 				FAFA067322DA4B7400E1AEC2 /* Products */,
 				46FF596B657D7711AD60815B /* Pods */,
-				DA10BBCF076FDA7D710D0889 /* Frameworks */,
+				99F585FCFDF4D7E0E41D9349 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -156,12 +156,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAFA068F22DA4B7500E1AEC2 /* Build configuration list for PBXNativeTarget "VEMS" */;
 			buildPhases = (
-				DD346D0159CCBC8690FA3CBF /* [CP] Check Pods Manifest.lock */,
+				8451FCA6D6F760FA4B3F4CF7 /* [CP] Check Pods Manifest.lock */,
 				FAFA066E22DA4B7400E1AEC2 /* Sources */,
 				FAFA066F22DA4B7400E1AEC2 /* Frameworks */,
 				FAFA067022DA4B7400E1AEC2 /* Resources */,
-				1B5BC1AA4031000C914236CA /* [CP] Embed Pods Frameworks */,
-				12A28DA149F8472D5A5F52FB /* [CP] Copy Pods Resources */,
+				23BFA470BA215B3ADAD9A71D /* [CP] Embed Pods Frameworks */,
+				51D5F42ECB4F96EB8F405EE3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -176,7 +176,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAFA069222DA4B7500E1AEC2 /* Build configuration list for PBXNativeTarget "VEMSTests" */;
 			buildPhases = (
-				6936725C9E311D160C1D8B62 /* [CP] Check Pods Manifest.lock */,
+				1070D8513D077DBBC26C6709 /* [CP] Check Pods Manifest.lock */,
 				FAFA068222DA4B7500E1AEC2 /* Sources */,
 				FAFA068322DA4B7500E1AEC2 /* Frameworks */,
 				FAFA068422DA4B7500E1AEC2 /* Resources */,
@@ -255,41 +255,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		12A28DA149F8472D5A5F52FB /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VEMS/Pods-VEMS-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VEMS/Pods-VEMS-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VEMS/Pods-VEMS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		1B5BC1AA4031000C914236CA /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VEMS/Pods-VEMS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-VEMS/Pods-VEMS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VEMS/Pods-VEMS-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6936725C9E311D160C1D8B62 /* [CP] Check Pods Manifest.lock */ = {
+		1070D8513D077DBBC26C6709 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -311,7 +277,41 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DD346D0159CCBC8690FA3CBF /* [CP] Check Pods Manifest.lock */ = {
+		23BFA470BA215B3ADAD9A71D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VEMS/Pods-VEMS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VEMS/Pods-VEMS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VEMS/Pods-VEMS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51D5F42ECB4F96EB8F405EE3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VEMS/Pods-VEMS-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VEMS/Pods-VEMS-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VEMS/Pods-VEMS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8451FCA6D6F760FA4B3F4CF7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -505,7 +505,7 @@
 		};
 		FAFA069022DA4B7500E1AEC2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A7C857A7EAB73DA0046719BA /* Pods-VEMS.debug.xcconfig */;
+			baseConfigurationReference = 1E161AA8532D7900A4145EA2 /* Pods-VEMS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -524,7 +524,7 @@
 		};
 		FAFA069122DA4B7500E1AEC2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B5BE32D5210FAFD4AB3C11B5 /* Pods-VEMS.release.xcconfig */;
+			baseConfigurationReference = FE4382E44A10E4C76679BB5C /* Pods-VEMS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -543,7 +543,7 @@
 		};
 		FAFA069322DA4B7500E1AEC2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DCD27A6452CEA48A7D8EA73C /* Pods-VEMSTests.debug.xcconfig */;
+			baseConfigurationReference = 3E3312F7CFA3DC3FCCF1D26C /* Pods-VEMSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -565,7 +565,7 @@
 		};
 		FAFA069422DA4B7500E1AEC2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3BD5EEC340F631E05DECBB97 /* Pods-VEMSTests.release.xcconfig */;
+			baseConfigurationReference = CB15F0C7DEF1E83BA93D04CE /* Pods-VEMSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
