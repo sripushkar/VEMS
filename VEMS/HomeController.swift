@@ -12,6 +12,9 @@ class HomeController: UIViewController {
     
     // MARK: - Properties
     
+    
+  
+    
     var welcomeLabel: UILabel = {
         let label = UILabel()
         label.textColor = .white
@@ -20,6 +23,45 @@ class HomeController: UIViewController {
         label.alpha = 0
         return label
     }()
+    
+    //BUTTONS STACKVIEW
+    
+    lazy var stackView: UIStackView = {
+        let order =  UIStackView(arrangedSubviews: [createEventButton, joinEventButton])
+        order.translatesAutoresizingMaskIntoConstraints = false
+        order.axis = .vertical
+        order.spacing = 10
+        order.distribution = .fillEqually
+        
+        
+        return order
+    }()
+    
+    
+    let createEventButton: UIButton = {
+        let createEvent = UIButton(type: .system)
+        createEvent.setTitle("Create Event", for: .normal)
+        createEvent.titleLabel?.font = UIFont.systemFont(ofSize: 44)
+        createEvent.setTitleColor(UIColor.mainBlue(), for: .normal)
+        createEvent.backgroundColor = .white
+        //createEvent.addTarget(self, action: #selector(handleLogin), for: .touchUpInside)
+        createEvent.layer.cornerRadius = 5
+        createEvent.contentEdgeInsets = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+        return createEvent
+    }()
+    
+    let joinEventButton: UIButton = {
+        let joinEvent = UIButton(type: .system)
+        joinEvent.setTitle("Join Event", for: .normal)
+        joinEvent.titleLabel?.font = UIFont.systemFont(ofSize: 44)
+        joinEvent.setTitleColor(UIColor.mainBlue(), for: .normal)
+        joinEvent.backgroundColor = .white
+        //createEvent.addTarget(self, action: #selector(handleLogin), for: .touchUpInside)
+        joinEvent.layer.cornerRadius = 5
+        joinEvent.contentEdgeInsets = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+        return joinEvent
+    }()
+    
     
     // MARK: - Init
     
@@ -86,6 +128,23 @@ class HomeController: UIViewController {
         view.addSubview(welcomeLabel)
         welcomeLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         welcomeLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        
+        view.addSubview(stackView)
+        stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        stackView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = false
+        stackView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = false
+        stackView.heightAnchor.constraint(equalToConstant: view.frame.height/2)
+        stackView.widthAnchor.constraint(equalToConstant: view.frame.width/1)
+        
+
+        /*
+        view.addSubview(joinEventButton)
+        joinEventButton.anchor(top: welcomeLabel.bottomAnchor, left: view.leftAnchor, bottom: nil, right: view.rightAnchor, paddingTop: 16, paddingLeft: 32, paddingBottom: 0, paddingRight: 32, width: 0, height: 50)
+        
+        view.addSubview(createEventButton)
+        createEventButton.anchor(top: joinEventButton.bottomAnchor, left: view.leftAnchor, bottom: nil, right: view.rightAnchor, paddingTop: 24, paddingLeft: 32, paddingBottom: 0, paddingRight: 32, width: 0, height: 50)
+        */
     }
 }
 

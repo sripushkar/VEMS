@@ -13,6 +13,8 @@ class LoginController: UIViewController {
     
     //MARK: - Properties
     
+    
+    
     let logoImageView: UIImageView = {
         let iv = UIImageView()
         iv.contentMode = .scaleAspectFit
@@ -97,6 +99,7 @@ class LoginController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureViewComponents()
+        self.hideKeyboardWhenTappedAround() 
     }
     
     // MARK: - Selectors
