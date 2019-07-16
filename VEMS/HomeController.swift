@@ -21,6 +21,28 @@ class HomeController: UIViewController {
         return label
     }()
     
+    let createEventButton: UIButton = {
+        let createEvent = UIButton(type: .system)
+        createEvent.setTitle("CREATE EVENT", for: .normal)
+        createEvent.titleLabel?.font = UIFont.systemFont(ofSize: 18)
+        createEvent.setTitleColor(UIColor.mainBlue(), for: .normal)
+        createEvent.backgroundColor = .white
+        //createEvent.addTarget(self, action: #selector(handleLogin), for: .touchUpInside)
+        createEvent.layer.cornerRadius = 5
+        return createEvent
+    }()
+    
+    let joinEventButton: UIButton = {
+        let joinEvent = UIButton(type: .system)
+        joinEvent.setTitle("JOIN EVENT", for: .normal)
+        joinEvent.titleLabel?.font = UIFont.systemFont(ofSize: 18)
+        joinEvent.setTitleColor(UIColor.mainBlue(), for: .normal)
+        joinEvent.backgroundColor = .white
+        //createEvent.addTarget(self, action: #selector(handleLogin), for: .touchUpInside)
+        joinEvent.layer.cornerRadius = 5
+        return joinEvent
+    }()
+    
     // MARK: - Init
     
     override func viewDidLoad() {
@@ -86,6 +108,14 @@ class HomeController: UIViewController {
         view.addSubview(welcomeLabel)
         welcomeLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         welcomeLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        
+        //CENTER BUTTONS HERE
+        
+        view.addSubview(joinEventButton)
+        joinEventButton.anchor(top: welcomeLabel.bottomAnchor, left: view.leftAnchor, bottom: nil, right: view.rightAnchor, paddingTop: 16, paddingLeft: 32, paddingBottom: 0, paddingRight: 32, width: 0, height: 50)
+        
+        view.addSubview(createEventButton)
+        createEventButton.anchor(top: joinEventButton.bottomAnchor, left: view.leftAnchor, bottom: nil, right: view.rightAnchor, paddingTop: 24, paddingLeft: 32, paddingBottom: 0, paddingRight: 32, width: 0, height: 50)
     }
 }
 
