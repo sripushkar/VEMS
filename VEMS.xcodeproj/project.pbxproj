@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BDB7B8422DD833C00711D1D /* Homepage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BDB7B8322DD833C00711D1D /* Homepage.storyboard */; };
 		8A27A1D54CE30C6A21C8CE0E /* Pods_VEMSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F4514E2017F870BB05C817C /* Pods_VEMSTests.framework */; };
 		D3F6AA58046B14D1DF2D36BE /* Pods_VEMS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFBB8CCAA8638E169691B2BD /* Pods_VEMS.framework */; };
 		FAAF5B1822DA4CC400159208 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA067522DA4B7400E1AEC2 /* AppDelegate.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BDB7B8322DD833C00711D1D /* Homepage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Homepage.storyboard; sourceTree = "<group>"; };
 		1F4514E2017F870BB05C817C /* Pods_VEMSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VEMSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BD5EEC340F631E05DECBB97 /* Pods-VEMSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VEMSTests.release.xcconfig"; path = "Target Support Files/Pods-VEMSTests/Pods-VEMSTests.release.xcconfig"; sourceTree = "<group>"; };
 		A7C857A7EAB73DA0046719BA /* Pods-VEMS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VEMS.debug.xcconfig"; path = "Target Support Files/Pods-VEMS/Pods-VEMS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				FAF1751422DAA1F200BC112C /* HomeController.swift */,
 				FAF1751622DAA21500BC112C /* Extensions.swift */,
 				FAFA067E22DA4B7500E1AEC2 /* LaunchScreen.storyboard */,
+				0BDB7B8322DD833C00711D1D /* Homepage.storyboard */,
 				FAFA067922DA4B7400E1AEC2 /* Main.storyboard */,
 				FAFA067C22DA4B7500E1AEC2 /* Assets.xcassets */,
 				FAFA068122DA4B7500E1AEC2 /* Info.plist */,
@@ -235,6 +238,7 @@
 				FAFA069622DA4C4D00E1AEC2 /* GoogleService-Info.plist in Resources */,
 				FAFA069922DA4C5500E1AEC2 /* GoogleService-Info.plist in Resources */,
 				FAFA067D22DA4B7500E1AEC2 /* Assets.xcassets in Resources */,
+				0BDB7B8422DD833C00711D1D /* Homepage.storyboard in Resources */,
 				FAFA067B22DA4B7400E1AEC2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
