@@ -99,6 +99,7 @@ class LoginController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureViewComponents()
+        self.hideKeyboardWhenTappedAround() 
     }
     
     // MARK: - Selectors
