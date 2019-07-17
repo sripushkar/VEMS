@@ -58,17 +58,22 @@ class HomeController: UIViewController {
         joinEvent.layer.cornerRadius = 5
         joinEvent.contentEdgeInsets = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
         joinEvent.addTarget(self, action: #selector(handleJoinEvent), for: .touchUpInside)
+        
         return joinEvent
     }()
     
-    //KEEP THIS FUNCTION FOR FUTURE UPDATES TO DATABASE
-    @objc func databaseTest(){
+    /*Events Database Function
+    @objc func eventsDatabase(){
         //uid is the unique identifier for the user. this line puts it to a variable
-        guard let userID = Auth.auth().currentUser?.uid else { return }
+        //guard let userID = Auth.auth().currentUser?.uid else { return }
         //this is the key value pair, replace with anything needed
-        let testDict = ["testing this": "working"]
-        //this updates it to the database. call this function into a button press, submit button, etc
-        Database.database().reference().child("users").child(userID).updateChildValues(testDict, withCompletionBlock: { (error, ref) in
+        var eventName = ""
+        var eventCode = Int.random(in: 100000 ... 999999)
+        var expAmtVolunteers = 0
+        var actualAmount = 0
+        let eventDict = ["Event Name": eventName, "testEvent": eventCode, "Expected Volunteers": expAmtVolunteers, "Actual Amount of Volunteers": actualAmount] as [String : Any]
+        this updates it to the database. call this function into a button press, submit button, etc
+        Database.database().reference().child("events").childByAutoId().updateChildValues(eventDict, withCompletionBlock: { (error, ref) in
             if let error = error{
                 print("Failed to update database values with error: : ", error.localizedDescription)
                 return
@@ -77,7 +82,7 @@ class HomeController: UIViewController {
             print("Test is working")
         })
     }
-    
+    */
     // MARK: - Init
     
     override func viewDidLoad() {
