@@ -15,7 +15,7 @@ class JoinEventController: UIViewController {
     var a = 1
     
     lazy var stackView: UIStackView = {
-        let order =  UIStackView(arrangedSubviews: [CodeString, GenerateCodeButton, SaveImageButton])
+        let order =  UIStackView(arrangedSubviews: [CodeString, GenerateCodeButton, SaveImageButton, qrImage])
         order.translatesAutoresizingMaskIntoConstraints = false
         order.axis = .vertical
         order.spacing = 20
@@ -75,19 +75,33 @@ class JoinEventController: UIViewController {
     }()
     
     
+    
+    
+    var qrImage: UIImageView = {
+        
+        
+        let image1 = UIImageView()
+        /*
+        image1.translatesAutoresizingMaskIntoConstraints = false
+        image1.centerXAnchor.constraint(equalTo: <#T##NSLayoutAnchor<NSLayoutXAxisAnchor>#>, constant: 100)
+        // image.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        image1.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 100).isActive = true
+ 
+        image1.widthAnchor.constraint(equalToConstant: 150).isActive = true
+        image1.heightAnchor.constraint(equalToConstant: 150).isActive = true
+ */
+        return image1
+    }()
+    
+    
     // MARK: - Init
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let image1 = UIImageView()
-        view.addSubview(image1)
+        //view.addSubview(image1)
         
-        image1.translatesAutoresizingMaskIntoConstraints = false
-        image1.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        // image.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        image1.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 100).isActive = true
-        image1.widthAnchor.constraint(equalToConstant: 150).isActive = true
-        image1.heightAnchor.constraint(equalToConstant: 150).isActive = true
+        
 
         
         configureViewComponents()
@@ -100,7 +114,7 @@ class JoinEventController: UIViewController {
     // MARK: - Helper Functions
     @objc func handleGeneratingCode() {
         
-        
+        /*
         if let myString = CodeString.text{
             
             let data = myString.data(using: .ascii, allowLossyConversion: false)
@@ -118,7 +132,7 @@ class JoinEventController: UIViewController {
             
             SaveImageButton.isEnabled = true
             
-        }
+        }*/
         
         
         
