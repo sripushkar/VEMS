@@ -11,9 +11,7 @@ import Firebase
 class HomeController: UIViewController {
     
     // MARK: - Properties
-    
-    
-  
+   
     
     var welcomeLabel: UILabel = {
         let label = UILabel()
@@ -47,6 +45,7 @@ class HomeController: UIViewController {
         createEvent.layer.cornerRadius = 5
         createEvent.contentEdgeInsets = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
         createEvent.addTarget(self, action: #selector(handleCreateEvent), for: .touchUpInside)
+        
         return createEvent
     }()
     
@@ -62,7 +61,27 @@ class HomeController: UIViewController {
         return joinEvent
     }()
     
-    
+    /*Events Database Function
+    @objc func eventsDatabase(){
+        //uid is the unique identifier for the user. this line puts it to a variable
+        //guard let userID = Auth.auth().currentUser?.uid else { return }
+        //this is the key value pair, replace with anything needed
+        var eventName = ""
+        var eventCode = Int.random(in: 100000 ... 999999)
+        var expAmtVolunteers = 0
+        var actualAmount = 0
+        let eventDict = ["Event Name": eventName, "testEvent": eventCode, "Expected Volunteers": expAmtVolunteers, "Actual Amount of Volunteers": actualAmount] as [String : Any]
+        this updates it to the database. call this function into a button press, submit button, etc
+        Database.database().reference().child("events").childByAutoId().updateChildValues(eventDict, withCompletionBlock: { (error, ref) in
+            if let error = error{
+                print("Failed to update database values with error: : ", error.localizedDescription)
+                return
+            }
+            //you can check console to see if it worked instead of going into firebase
+            print("Test is working")
+        })
+    }
+    */
     // MARK: - Init
     
     override func viewDidLoad() {
