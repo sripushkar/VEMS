@@ -5,4 +5,5 @@ which gives him or her a unique event code. Volunteers will then recieve the cod
 to register for the event. This will create a unique QR code which can then be used to verify that the volunteer attended the event
 This is done by implementing a scanner into the organizer's account. They will scan the code, when the volunteer arrives, and the value will then update in the database.
 Data is stored in Firebase's Realtime Database, which stores data as flatfile JSON. Volunteers can also track the amount of hours they have completed using the app, eliminating the need for a hours log, provided that this app is used by the event organizers as well.
-![](https://i.imgur.com/RepjUK0.png)
+
+<div style="margin: auto"><img src="https://i.imgur.com/RepjUK0.png" /></div>
