@@ -21,16 +21,6 @@ class PinController: UIViewController {
         return iv
     }()
     
-    lazy var emailContainerView: UIView = {
-        let view = UIView()
-        return view.textContainerView(view: view, #imageLiteral(resourceName: "ic_mail_outline_white_2x-1"), emailTextField)
-    }()
-    
-    lazy var emailTextField: UITextField = {
-        let tf = UITextField()
-        return tf.textField(withPlaceolder: "Email", isSecureTextEntry: false)
-    }()
-    
     lazy var stackView: UIStackView = {
         let order =  UIStackView(arrangedSubviews: [PinString, PinButton])
         order.translatesAutoresizingMaskIntoConstraints = false
@@ -94,23 +84,15 @@ class PinController: UIViewController {
         
         navigationItem.title = "Enter the Pin"
         
-        view.addSubview(logoImageView)
-        logoImageView.anchor(top: view.topAnchor, left: nil, bottom: nil, right: nil, paddingTop: 60, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 150, height: 150)
-        logoImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         
-        view.addSubview(emailContainerView)
-        emailContainerView.anchor(top: logoImageView.bottomAnchor, left: view.leftAnchor, bottom: nil, right: view.rightAnchor, paddingTop: 24, paddingLeft: 32, paddingBottom: 0, paddingRight: 32, width: 0, height: 50)
-        
-        
-        /*
-         navigationItem.leftBarButtonItem?.tintColor = .white
-         navigationController?.navigationBar.barTintColor = UIColor.magenta
-         */
         view.addSubview(stackView)
-        /*view.addSubview(joinLabel)
-        joinLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        joinLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-    */
+        view.addSubview(stackView)
+        stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        stackView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = false
+        stackView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = false
+        stackView.heightAnchor.constraint(equalToConstant: view.frame.height/2)
+        stackView.widthAnchor.constraint(equalToConstant: view.frame.width/1)
         
     }
     
