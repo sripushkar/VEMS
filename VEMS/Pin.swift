@@ -12,6 +12,24 @@ class PinController: UIViewController {
     
     // MARK: - Properties
     
+    let logoImageView: UIImageView = {
+        let iv = UIImageView()
+        iv.contentMode = .scaleAspectFit
+        iv.clipsToBounds = true
+        //SETS LOGO IMAGE
+        iv.image = #imageLiteral(resourceName: "Logo")
+        return iv
+    }()
+    
+    lazy var emailContainerView: UIView = {
+        let view = UIView()
+        return view.textContainerView(view: view, #imageLiteral(resourceName: "ic_mail_outline_white_2x-1"), emailTextField)
+    }()
+    
+    lazy var emailTextField: UITextField = {
+        let tf = UITextField()
+        return tf.textField(withPlaceolder: "Email", isSecureTextEntry: false)
+    }()
     
     lazy var stackView: UIStackView = {
         let order =  UIStackView(arrangedSubviews: [PinString, PinButton])
@@ -76,14 +94,23 @@ class PinController: UIViewController {
         
         navigationItem.title = "Enter the Pin"
         
+        view.addSubview(logoImageView)
+        logoImageView.anchor(top: view.topAnchor, left: nil, bottom: nil, right: nil, paddingTop: 60, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 150, height: 150)
+        logoImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        
+        view.addSubview(emailContainerView)
+        emailContainerView.anchor(top: logoImageView.bottomAnchor, left: view.leftAnchor, bottom: nil, right: view.rightAnchor, paddingTop: 24, paddingLeft: 32, paddingBottom: 0, paddingRight: 32, width: 0, height: 50)
+        
+        
         /*
          navigationItem.leftBarButtonItem?.tintColor = .white
          navigationController?.navigationBar.barTintColor = UIColor.magenta
          */
-        
-        view.addSubview(joinLabel)
+        view.addSubview(stackView)
+        /*view.addSubview(joinLabel)
         joinLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         joinLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+    */
         
     }
     
