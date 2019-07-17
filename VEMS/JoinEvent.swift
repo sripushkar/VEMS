@@ -14,6 +14,8 @@ class JoinEventController: UIViewController {
     
     var a = 1
     
+    let image1 = UIImageView()
+    
     lazy var stackView: UIStackView = {
         let order =  UIStackView(arrangedSubviews: [CodeString, GenerateCodeButton, SaveImageButton])
         order.translatesAutoresizingMaskIntoConstraints = false

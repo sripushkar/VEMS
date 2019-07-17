@@ -97,7 +97,7 @@ class HomeController: UIViewController {
     }
     
     @objc func handlePin() {
-        navigationController?.pushViewController(JoinEventController(), animated: true)
+        navigationController?.pushViewController(PinController(), animated: true)
     }
     
 
