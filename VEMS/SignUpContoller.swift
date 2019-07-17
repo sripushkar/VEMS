@@ -110,6 +110,7 @@ class SignUpController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureViewComponents()
+        self.hideKeyboardWhenTappedAround()
     }
     
     // MARK: - Selectors
@@ -123,7 +124,7 @@ class SignUpController: UIViewController {
     }
     
     @objc func handleShowSignUp(){
-        navigationController?.pushViewController(SignUpController(), animated: true)
+        navigationController?.pushViewController(CreateEventController(), animated: true)
     }
     
     // MARK: - API
@@ -135,7 +136,7 @@ class SignUpController: UIViewController {
             if let error = error{
                 print("Failed to sign user up with error: ", error.localizedDescription)
                 //ERROR POPUP HERE
-                let alert = UIAlertController(title: "Error", message: "Username and/or password is already taken", preferredStyle: .alert)
+                let alert = UIAlertController(title: "Error", message: "Please enter valid account information", preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
                     NSLog("The \"OK\" alert occured.")
                 }))

@@ -44,9 +44,9 @@ class HomeController: UIViewController {
         createEvent.titleLabel?.font = UIFont.systemFont(ofSize: 44)
         createEvent.setTitleColor(UIColor.mainBlue(), for: .normal)
         createEvent.backgroundColor = .white
-        //createEvent.addTarget(self, action: #selector(handleLogin), for: .touchUpInside)
         createEvent.layer.cornerRadius = 5
         createEvent.contentEdgeInsets = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+        createEvent.addTarget(self, action: #selector(handleCreateEvent), for: .touchUpInside)
         return createEvent
     }()
     
@@ -56,9 +56,9 @@ class HomeController: UIViewController {
         joinEvent.titleLabel?.font = UIFont.systemFont(ofSize: 44)
         joinEvent.setTitleColor(UIColor.mainBlue(), for: .normal)
         joinEvent.backgroundColor = .white
-        //createEvent.addTarget(self, action: #selector(handleLogin), for: .touchUpInside)
         joinEvent.layer.cornerRadius = 5
         joinEvent.contentEdgeInsets = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+        joinEvent.addTarget(self, action: #selector(handleJoinEvent), for: .touchUpInside)
         return joinEvent
     }()
     
@@ -73,6 +73,15 @@ class HomeController: UIViewController {
     
     // MARK: - Selectors
     
+    @objc func handleCreateEvent() {
+        navigationController?.pushViewController(CreateEventController(), animated: true)
+    }
+    
+    @objc func handleJoinEvent() {
+        navigationController?.pushViewController(JoinEventController(), animated: true)
+    }
+    
+
     @objc func handleSignOut(){
         let alertController = UIAlertController(title: nil, message: "Are you sure you want to sign out?", preferredStyle: .actionSheet)
         alertController.addAction(UIAlertAction(title: "Sign Out", style: .destructive, handler: { (_) in
