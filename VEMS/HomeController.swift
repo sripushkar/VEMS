@@ -58,7 +58,7 @@ class HomeController: UIViewController {
         joinEvent.backgroundColor = .white
         joinEvent.layer.cornerRadius = 5
         joinEvent.contentEdgeInsets = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
-        joinEvent.addTarget(self, action: #selector(handleJoinEvent), for: .touchUpInside)
+        joinEvent.addTarget(self, action: #selector(handlePin), for: .touchUpInside)
         return joinEvent
     }()
     
@@ -77,7 +77,7 @@ class HomeController: UIViewController {
         navigationController?.pushViewController(CreateEventController(), animated: true)
     }
     
-    @objc func handleJoinEvent() {
+    @objc func handlePin() {
         navigationController?.pushViewController(JoinEventController(), animated: true)
     }
     

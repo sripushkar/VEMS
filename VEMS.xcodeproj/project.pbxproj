@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0BDB7B8422DD833C00711D1D /* Homepage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BDB7B8322DD833C00711D1D /* Homepage.storyboard */; };
+		788D24AD22DF5FD500C8CC90 /* Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788D24AC22DF5FD500C8CC90 /* Pin.swift */; };
 		78D9A0CB22DE45AF00308498 /* CreateEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D9A0CA22DE45AF00308498 /* CreateEvent.swift */; };
 		78D9A0CD22DE45C600308498 /* JoinEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D9A0CC22DE45C600308498 /* JoinEvent.swift */; };
 		E528FB44814884C1E30A5983 /* Pods_VEMS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 597BC0D15ACB8CBDEC96419A /* Pods_VEMS.framework */; };
@@ -43,6 +44,7 @@
 		1E161AA8532D7900A4145EA2 /* Pods-VEMS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VEMS.debug.xcconfig"; path = "Target Support Files/Pods-VEMS/Pods-VEMS.debug.xcconfig"; sourceTree = "<group>"; };
 		3E3312F7CFA3DC3FCCF1D26C /* Pods-VEMSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VEMSTests.debug.xcconfig"; path = "Target Support Files/Pods-VEMSTests/Pods-VEMSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		597BC0D15ACB8CBDEC96419A /* Pods_VEMS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VEMS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		788D24AC22DF5FD500C8CC90 /* Pin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pin.swift; sourceTree = "<group>"; };
 		78D9A0CA22DE45AF00308498 /* CreateEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEvent.swift; sourceTree = "<group>"; };
 		78D9A0CC22DE45C600308498 /* JoinEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinEvent.swift; sourceTree = "<group>"; };
 		8ED225BAF138D8A8BC6FF61C /* Pods_VEMSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VEMSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -133,6 +135,7 @@
 				FAF1751222DAA1C500BC112C /* SignUpContoller.swift */,
 				FAF1751422DAA1F200BC112C /* HomeController.swift */,
 				78D9A0CA22DE45AF00308498 /* CreateEvent.swift */,
+				788D24AC22DF5FD500C8CC90 /* Pin.swift */,
 				78D9A0CC22DE45C600308498 /* JoinEvent.swift */,
 				FAF1751622DAA21500BC112C /* Extensions.swift */,
 				FAFA067E22DA4B7500E1AEC2 /* LaunchScreen.storyboard */,
@@ -349,6 +352,7 @@
 				FAF1751322DAA1C500BC112C /* SignUpContoller.swift in Sources */,
 				78D9A0CB22DE45AF00308498 /* CreateEvent.swift in Sources */,
 				FAF1751722DAA21500BC112C /* Extensions.swift in Sources */,
+				788D24AD22DF5FD500C8CC90 /* Pin.swift in Sources */,
 				FAAF5B1E22DA88E600159208 /* LoginController.swift in Sources */,
 				FAAF5B1922DA4CC800159208 /* AppDelegate.swift in Sources */,
 				78D9A0CD22DE45C600308498 /* JoinEvent.swift in Sources */,
