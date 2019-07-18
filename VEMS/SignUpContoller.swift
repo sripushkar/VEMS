@@ -146,7 +146,8 @@ class SignUpController: UIViewController {
             
             guard let uid = result?.user.uid else{ return }
             let hours = 0
-            let values = ["email": email, "username": username, "hours": hours] as [String : Any]
+            let usershowup = false
+            let values = ["email": email, "username": username, "hours": hours, "user showed up?": usershowup] as [String : Any]
             
             Database.database().reference().child("users").child(uid).updateChildValues(values, withCompletionBlock: { (error, ref) in
                 if let error = error{
