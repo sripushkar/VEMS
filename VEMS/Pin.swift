@@ -74,31 +74,26 @@ class PinController: UIViewController {
     
     @objc func handleJoinEvent() {
         print("/////// handlejoinevent run")
-        navigationController?.pushViewController(JoinEventController(), animated: true)
-        /*
-        let eventCode = "930156"
-        let rootRef = Database.database().reference()
-        let childRef = Database.database().reference(withPath: "events")
-        let itemsRef = rootRef.child("events")
-        let eventcodeRef = itemsRef.child(eventCode)
         
-        print("//////  Rootref key is 1")
-        print(rootRef.key)
-        print("//////  Childref key is 2")
-        print(childRef.key)
-        print("//////  itemsref key is 3")
-        print(itemsRef.key)
-        print("////// eventcoderef key is 4")
-        print(eventcodeRef)
-        Database.database().reference().child("events"). ("eventCode").isEqual(eventCode) { (snapshot) in
-            if let dictionary = snapshot.value as? [String: AnyObject]{
-                print(dictionary ["Event Name"] as? String)
+        let text = PinString.text
+        let eventCode = Int(text!)
+        print(eventCode as Any)
+        Database.database().reference().child("events").queryOrdered(byChild: "testEvent").queryEqual(toValue: eventCode).observeSingleEvent(of: .value, with: { (snapshot) in
+            if snapshot.exists() {
+                print("Pin Valid")
+                self.navigationController?.pushViewController(JoinEventController(), animated: true)
+            } else {
+                print("Pin not found.")
+                let alert = UIAlertController(title: "Error", message: "Please enter a valid PIN.", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+                    NSLog("The \"OK\" alert occured.")
+                }))
+                self.present(alert, animated: true, completion: nil)
+                return
             }
-            //you can check console to see if it worked instead of going into firebase
-            else {
-            print("Test is not working")
-            }
-        })*/
+
+          }
+        )
     }
     
     // MARK: - Helper Functions

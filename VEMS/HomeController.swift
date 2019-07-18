@@ -130,16 +130,14 @@ class HomeController: UIViewController {
     
     func authenticateUserAndConfigureView(){
         
-        if Auth.auth().currentUser == nil {
+        /*if Auth.auth().currentUser == nil {
             DispatchQueue.main.async{
                 let navController = UINavigationController(rootViewController: LoginController())
                 navController.navigationBar.barStyle = .black
                 self.present(navController, animated: true, completion: nil)
             }
-        }
-        else{
+        }*/
             configureViewComponents()
-        }
     }
     
     // MARK: - Helper Functions
