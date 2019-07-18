@@ -40,7 +40,7 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
             captureSession.addOutput(metadataOutput)
             
             metadataOutput.setMetadataObjectsDelegate(self, queue: DispatchQueue.main)
-            metadataOutput.metadataObjectTypes = [.ean8, .ean13, .pdf417]
+            metadataOutput.metadataObjectTypes = [.qr, .ean8, .ean13, .pdf417]
         } else {
             failed()
             return
@@ -84,14 +84,19 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
             guard let readableObject = metadataObject as? AVMetadataMachineReadableCodeObject else { return }
             guard let stringValue = readableObject.stringValue else { return }
             AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_Vibrate))
-            found(code: stringValue)
+            //found(code: stringValue)
+            navigationController?.pushViewController(HomeController(), animated: true)
         }
         
         dismiss(animated: true)
     }
     
+    let codeString = UIAlertController(title: "Error", message: "Please enter valid account information", preferredStyle: .alert)
+    
+    
     func found(code: String) {
-        navigationController?.pushViewController(HomeController(), animated: true)
+        self.present(codeString, animated: true, completion: nil)
+        
     }
     
     override var prefersStatusBarHidden: Bool {
