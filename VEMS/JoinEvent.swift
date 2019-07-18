@@ -12,12 +12,9 @@ class JoinEventController: UIViewController {
     
     // MARK: - Properties
     
-    var a = 1
-    
-    let image1 = UIImageView()
     
     lazy var stackView: UIStackView = {
-        let order =  UIStackView(arrangedSubviews: [CodeString, GenerateCodeButton, SaveImageButton, qrImage])
+        let order =  UIStackView(arrangedSubviews: [CodeString, GenerateCodeButton, SaveImageButton])
         order.translatesAutoresizingMaskIntoConstraints = false
         order.axis = .vertical
         order.spacing = 20
@@ -25,25 +22,29 @@ class JoinEventController: UIViewController {
         return order
     }()
     
-    /*let CodeImageView: UIImageView = {
-        let image = UIImageView()
-        image.centerXAnchor.constraint(equalTo: view.centerXAnchor)
-        return image
-    }()
-    */
     
     let CodeString: UITextField = {
         let string1 = UITextField(frame: CGRect(x: 10.0, y: 100.0, width: UIScreen.main.bounds.size.width - 30.0, height: 30.0))
         string1.backgroundColor = .white
         string1.borderStyle = .line
+        string1.placeholder = "Enter username and event code here"
+        return string1
+    }()
+    
+    
+    let CodeString1: String = {
+        let string1: String = "Sujit"
+        /*let string1 =UITextField(frame: CGRect(x: 10.0, y: 100.0, width: UIScreen.main.bounds.size.width - 30.0, height: 30.0))
+        string1.backgroundColor = .white
+        string1.borderStyle = .line*/
         return string1
     }()
     
     
     let GenerateCodeButton: UIButton = {
         let generatecode = UIButton(type: .system)
-        generatecode.setTitle("Generate QR Code", for: .normal)
-        generatecode.titleLabel?.font = UIFont.systemFont(ofSize: 44)
+        generatecode.setTitle("Generate Code", for: .normal)
+        generatecode.titleLabel?.font = UIFont.systemFont(ofSize: 16)
         generatecode.setTitleColor(UIColor.mainBlue(), for: .normal)
         generatecode.backgroundColor = .white
         generatecode.layer.cornerRadius = 5
@@ -56,7 +57,7 @@ class JoinEventController: UIViewController {
     let SaveImageButton: UIButton = {
         let joinEvent = UIButton(type: .system)
         joinEvent.setTitle("Save Image", for: .normal)
-        joinEvent.titleLabel?.font = UIFont.systemFont(ofSize: 44)
+        joinEvent.titleLabel?.font = UIFont.systemFont(ofSize: 16)
         joinEvent.setTitleColor(UIColor.mainBlue(), for: .normal)
         joinEvent.backgroundColor = .white
         joinEvent.layer.cornerRadius = 5
@@ -64,35 +65,16 @@ class JoinEventController: UIViewController {
         joinEvent.addTarget(self, action: #selector(buttonScreenShot), for: .touchUpInside)
         return joinEvent
     }()
-    
-    
-    var joinLabel: UILabel = {
-        let label = UILabel()
-        label.textColor = .white
-        label.font = UIFont.systemFont(ofSize: 28)
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.alpha = 0
-        
-        return label
-    }()
-    
+ 
     
     
     
     var qrImage: UIImageView = {
-        
-        
-        let image1 = UIImageView()
-        /*
-        image1.translatesAutoresizingMaskIntoConstraints = false
-        image1.centerXAnchor.constraint(equalTo: <#T##NSLayoutAnchor<NSLayoutXAxisAnchor>#>, constant: 100)
-        // image.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        image1.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 100).isActive = true
- 
-        image1.widthAnchor.constraint(equalToConstant: 150).isActive = true
-        image1.heightAnchor.constraint(equalToConstant: 150).isActive = true
- */
-        return image1
+        let imageView = UIImageView()
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.widthAnchor.constraint(equalToConstant: 150).isActive = true
+        imageView.heightAnchor.constraint(equalToConstant: 150).isActive = true
+        return imageView
     }()
     
     
@@ -100,9 +82,14 @@ class JoinEventController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let image1 = UIImageView()
-        //view.addSubview(image1)
-        
+        /*let image1 = UIImageView()
+        image1.translatesAutoresizingMaskIntoConstraints = false
+        image1.centerXAnchor.constraint(equalTo: view.centerXanchor, constant: 100).isActive = true
+        image1.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 100).isActive = true
+        image1.widthAnchor.constraint(equalToConstant: 150).isActive = true
+        image1.heightAnchor.constraint(equalToConstant: 150).isActive = true
+        view.addSubview(imageView)
+        */
         
 
         
@@ -116,10 +103,9 @@ class JoinEventController: UIViewController {
     // MARK: - Helper Functions
     @objc func handleGeneratingCode() {
         
-        /*
-        if let myString = CodeString.text{
+        let myString = CodeString.text
             
-            let data = myString.data(using: .ascii, allowLossyConversion: false)
+        let data = myString?.data(using: .ascii, allowLossyConversion: false)
             let filter = CIFilter(name: "CIQRCodeGenerator")
             filter?.setValue(data, forKey: "InputMessage")
             
@@ -129,16 +115,14 @@ class JoinEventController: UIViewController {
             let transformImage = ciImage?.transformed(by: transform)
             
             let image = UIImage(ciImage: transformImage!)
-            image1.image = image
-            
-            
+            qrImage.image = image
             SaveImageButton.isEnabled = true
             
-        }*/
         
         
         
     }
+    
     
     
     @objc func buttonScreenShot(){
@@ -165,20 +149,26 @@ class JoinEventController: UIViewController {
         /*
          navigationItem.leftBarButtonItem?.tintColor = .white
          navigationController?.navigationBar.barTintColor = UIColor.magenta
-         */
+ 
         
         view.addSubview(joinLabel)
         joinLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         joinLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        */
+        
+        view.addSubview(qrImage)
+        qrImage.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        qrImage.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -100).isActive = true
+        
         
         view.addSubview(stackView)
         stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        stackView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = false
-        stackView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = false
+        stackView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 30).isActive = false
+        stackView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 30).isActive = false
         stackView.heightAnchor.constraint(equalToConstant: view.frame.height/2)
         stackView.widthAnchor.constraint(equalToConstant: view.frame.width/1)
-        
+ 
     }
     
 }

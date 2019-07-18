@@ -11,7 +11,6 @@ import Firebase
 class PinController: UIViewController {
     
     // MARK: - Properties
-    
     let logoImageView: UIImageView = {
         let iv = UIImageView()
         iv.contentMode = .scaleAspectFit
@@ -74,7 +73,32 @@ class PinController: UIViewController {
 
     
     @objc func handleJoinEvent() {
+        print("/////// handlejoinevent run")
         navigationController?.pushViewController(JoinEventController(), animated: true)
+        /*
+        let eventCode = "930156"
+        let rootRef = Database.database().reference()
+        let childRef = Database.database().reference(withPath: "events")
+        let itemsRef = rootRef.child("events")
+        let eventcodeRef = itemsRef.child(eventCode)
+        
+        print("//////  Rootref key is 1")
+        print(rootRef.key)
+        print("//////  Childref key is 2")
+        print(childRef.key)
+        print("//////  itemsref key is 3")
+        print(itemsRef.key)
+        print("////// eventcoderef key is 4")
+        print(eventcodeRef)
+        Database.database().reference().child("events"). ("eventCode").isEqual(eventCode) { (snapshot) in
+            if let dictionary = snapshot.value as? [String: AnyObject]{
+                print(dictionary ["Event Name"] as? String)
+            }
+            //you can check console to see if it worked instead of going into firebase
+            else {
+            print("Test is not working")
+            }
+        })*/
     }
     
     // MARK: - Helper Functions
