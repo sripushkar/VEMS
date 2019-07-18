@@ -65,7 +65,7 @@ class HomeController: UIViewController {
     @objc func eventsDatabase(){
         print("/////// eventsDatabase run 1")
         //uid is the unique identifier for the user. this line puts it to a variable
-        //guard let userID = Auth.auth().currentUser?.uid else { return }
+        guard let userID = Auth.auth().currentUser?.uid else { return }
         //this is the key value pair, replace with anything needed
         var eventName = "Open House"
         var eventCode = Int.random(in: 100000 ... 999999)
