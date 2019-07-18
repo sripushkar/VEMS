@@ -7,10 +7,13 @@
 //
 import AVFoundation
 import UIKit
+import Firebase
 
 class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate {
     var captureSession: AVCaptureSession!
     var previewLayer: AVCaptureVideoPreviewLayer!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -84,8 +87,8 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
             guard let readableObject = metadataObject as? AVMetadataMachineReadableCodeObject else { return }
             guard let stringValue = readableObject.stringValue else { return }
             AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_Vibrate))
-            //found(code: stringValue)
-            navigationController?.pushViewController(HomeController(), animated: true)
+            found(code: stringValue)
+            //navigationController?.pushViewController(HomeController(), animated: true)
         }
         
         dismiss(animated: true)
@@ -97,6 +100,9 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
     func found(code: String) {
         let codeString = UIAlertController(title: "Website is:", message: code, preferredStyle: .alert)
         self.present(codeString, animated: true, completion: nil)
+        guard let userID = Auth.auth().currentUser?.uid else { return }
+        let ref = Database.database().reference().child("users").child(userID)
+        ref.updateChildValues(["hours": 1, "user showed up?": true])
         
     }
     
