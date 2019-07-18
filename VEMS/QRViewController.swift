@@ -84,8 +84,8 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
             guard let readableObject = metadataObject as? AVMetadataMachineReadableCodeObject else { return }
             guard let stringValue = readableObject.stringValue else { return }
             AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_Vibrate))
-            //found(code: stringValue)
-            navigationController?.pushViewController(HomeController(), animated: true)
+            found(code: stringValue)
+            //navigationController?.pushViewController(HomeController(), animated: true)
         }
         
         dismiss(animated: true)

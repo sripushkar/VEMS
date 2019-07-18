@@ -13,13 +13,25 @@ class CreateEventController: UIViewController {
     // MARK: - Properties
     let scannerOpen: UIButton = {
         let generatecode = UIButton(type: .system)
-        generatecode.setTitle("open scanner", for: .normal)
+        generatecode.setTitle("Scan existing event", for: .normal)
         generatecode.titleLabel?.font = UIFont.systemFont(ofSize: 16)
         generatecode.setTitleColor(UIColor.mainBlue(), for: .normal)
         generatecode.backgroundColor = .white
         generatecode.layer.cornerRadius = 5
         generatecode.contentEdgeInsets = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
         generatecode.addTarget(self, action: #selector(moveToScanner), for: .touchUpInside)
+        return generatecode
+    }()
+    
+    let newEvent: UIButton = {
+        let generatecode = UIButton(type: .system)
+        generatecode.setTitle("Create new event", for: .normal)
+        generatecode.titleLabel?.font = UIFont.systemFont(ofSize: 16)
+        generatecode.setTitleColor(UIColor.mainBlue(), for: .normal)
+        generatecode.backgroundColor = .white
+        generatecode.layer.cornerRadius = 5
+        generatecode.contentEdgeInsets = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+        generatecode.addTarget(self, action: #selector(databaseCreateEvent), for: .touchUpInside)
         return generatecode
     }()
     
@@ -35,7 +47,7 @@ class CreateEventController: UIViewController {
     }()
     
     lazy var stackView: UIStackView = {
-        let order =  UIStackView(arrangedSubviews: [scannerOpen, createLabel])
+        let order =  UIStackView(arrangedSubviews: [newEvent, scannerOpen, createLabel])
         order.translatesAutoresizingMaskIntoConstraints = false
         order.axis = .vertical
         order.spacing = 10
@@ -56,6 +68,24 @@ class CreateEventController: UIViewController {
     
     
     // MARK: - Helper Functions
+    
+    @objc func databaseCreateEvent() {
+        var eventName = "Open House"
+        var eventCode = Int.random(in: 100000 ... 999999)
+        print(eventCode)
+        var expAmtVolunteers = 0
+        var actualAmount = 0
+        let eventDict = ["Event Name": eventName, "testEvent": eventCode, "Expected Volunteers": expAmtVolunteers, "Actual Amount of Volunteers": actualAmount] as [String : Any]
+        //this updates it to the database. call this function into a button press, submit button, etc
+        Database.database().reference().child("events").childByAutoId().updateChildValues(eventDict, withCompletionBlock: { (error, ref) in
+            if let error = error{
+                print("Failed to update database values with error: : ", error.localizedDescription)
+                return
+            }
+            //you can check console to see if it worked instead of going into firebase
+            print("Test is working")
+        })
+    }
     
     @objc func moveToScanner() {
         navigationController?.pushViewController(ScannerViewController(), animated: true)
