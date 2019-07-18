@@ -16,6 +16,7 @@
 		FAAF5B1822DA4CC400159208 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA067522DA4B7400E1AEC2 /* AppDelegate.swift */; };
 		FAAF5B1922DA4CC800159208 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA067522DA4B7400E1AEC2 /* AppDelegate.swift */; };
 		FAAF5B1E22DA88E600159208 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAF5B1D22DA88E600159208 /* LoginController.swift */; };
+		FACD0C4922E021B50088D6B3 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACD0C4822E021B50088D6B3 /* QRViewController.swift */; };
 		FAF1751322DAA1C500BC112C /* SignUpContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF1751222DAA1C500BC112C /* SignUpContoller.swift */; };
 		FAF1751522DAA1F200BC112C /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF1751422DAA1F200BC112C /* HomeController.swift */; };
 		FAF1751722DAA21500BC112C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF1751622DAA21500BC112C /* Extensions.swift */; };
@@ -50,6 +51,7 @@
 		8ED225BAF138D8A8BC6FF61C /* Pods_VEMSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VEMSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB15F0C7DEF1E83BA93D04CE /* Pods-VEMSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VEMSTests.release.xcconfig"; path = "Target Support Files/Pods-VEMSTests/Pods-VEMSTests.release.xcconfig"; sourceTree = "<group>"; };
 		FAAF5B1D22DA88E600159208 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		FACD0C4822E021B50088D6B3 /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
 		FAF1751222DAA1C500BC112C /* SignUpContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpContoller.swift; sourceTree = "<group>"; };
 		FAF1751422DAA1F200BC112C /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		FAF1751622DAA21500BC112C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				FAFA067922DA4B7400E1AEC2 /* Main.storyboard */,
 				FAFA067C22DA4B7500E1AEC2 /* Assets.xcassets */,
 				FAFA068122DA4B7500E1AEC2 /* Info.plist */,
+				FACD0C4822E021B50088D6B3 /* QRViewController.swift */,
 				FAFA069522DA4C4D00E1AEC2 /* GoogleService-Info.plist */,
 			);
 			path = VEMS;
@@ -354,6 +357,7 @@
 				FAF1751722DAA21500BC112C /* Extensions.swift in Sources */,
 				788D24AD22DF5FD500C8CC90 /* Pin.swift in Sources */,
 				FAAF5B1E22DA88E600159208 /* LoginController.swift in Sources */,
+				FACD0C4922E021B50088D6B3 /* QRViewController.swift in Sources */,
 				FAAF5B1922DA4CC800159208 /* AppDelegate.swift in Sources */,
 				78D9A0CD22DE45C600308498 /* JoinEvent.swift in Sources */,
 				FAF1751522DAA1F200BC112C /* HomeController.swift in Sources */,
@@ -521,13 +525,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CQFQ6QG8M2;
+				DEVELOPMENT_TEAM = 5HWSUD667W;
 				INFOPLIST_FILE = VEMS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.vems.VEMS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.srijulapally.VEMS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -540,13 +544,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CQFQ6QG8M2;
+				DEVELOPMENT_TEAM = 5HWSUD667W;
 				INFOPLIST_FILE = VEMS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.vems.VEMS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.srijulapally.VEMS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -44,7 +44,7 @@ class HomeController: UIViewController {
         createEvent.backgroundColor = .white
         createEvent.layer.cornerRadius = 5
         createEvent.contentEdgeInsets = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
-        // createEvent.addTarget(self, action: #selector(handleCreateEvent), for: .touchUpInside)
+        createEvent.addTarget(self, action: #selector(handleCreateEvent), for: .touchUpInside)
         createEvent.addTarget(self, action: #selector(eventsDatabase), for: .touchUpInside)
         return createEvent
     }()
