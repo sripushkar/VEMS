@@ -91,10 +91,11 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
         dismiss(animated: true)
     }
     
-    let codeString = UIAlertController(title: "Error", message: "Please enter valid account information", preferredStyle: .alert)
+    
     
     
     func found(code: String) {
+        let codeString = UIAlertController(title: "Website is:", message: code, preferredStyle: .alert)
         self.present(codeString, animated: true, completion: nil)
         
     }
