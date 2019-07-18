@@ -75,10 +75,12 @@ class PinController: UIViewController {
     @objc func handleJoinEvent() {
         print("/////// handlejoinevent run")
         
-        let eventCode = 192230
+        let text = PinString.text
+        let eventCode = Int(text!)
+        print(eventCode)
         Database.database().reference().child("events").queryOrdered(byChild: "testEvent").queryEqual(toValue: eventCode).observeSingleEvent(of: .value, with: { (snapshot) in
             if snapshot.exists() {
-                print("pin valid")
+                print("Pin Valid")
                 self.navigationController?.pushViewController(JoinEventController(), animated: true)
             } else {
                 print("Pin not found.")
