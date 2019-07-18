@@ -56,7 +56,33 @@ class CreateEventController: UIViewController {
         
         return order
     }()
-    
+    //ALERT for create new event
+    /*
+    let labelMessage: UIAlertController = {
+         let alertController = UIAlertController(title: "Enter details", message: "Enter event name and expected amount of volunteers", preferredStyle: .alert)
+        
+        let confirmAction = UIAlertAction(title: "Enter", style: .default) { (_) in
+            
+            //getting the input values from user
+            let eventName = alertController.textFields?[0].text
+            let expNumber = alertController.textFields?[1].text
+        }
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (_) in }
+            
+            //adding textfields to our dialog box
+            alertController.addTextField { (textField) in
+                textField.placeholder = "Enter Name"
+            }
+            alertController.addTextField { (textField) in
+                textField.placeholder = "Enter Email"
+            }
+            
+            //adding the action to dialogbox
+            alertController.addAction(confirmAction)
+            alertController.addAction(cancelAction)
+        
+            return alertController
+    }()*/
     
     // MARK: - Init
     
@@ -70,16 +96,22 @@ class CreateEventController: UIViewController {
     // MARK: - Helper Functions
     
     @objc func databaseCreateEvent() {
-        var eventName = "Open House"
+        
         var eventCode = Int.random(in: 100000 ... 999999)
         print(eventCode)
         var expAmtVolunteers = 0
         var actualAmount = 0
-        let eventDict = ["Event Name": eventName, "testEvent": eventCode, "Expected Volunteers": expAmtVolunteers, "Actual Amount of Volunteers": actualAmount] as [String : Any]
+        let eventDict = ["Event Code": eventCode, "Expected Volunteers": expAmtVolunteers, "Actual Amount of Volunteers": actualAmount] as [String : Any]
         //this updates it to the database. call this function into a button press, submit button, etc
         Database.database().reference().child("events").childByAutoId().updateChildValues(eventDict, withCompletionBlock: { (error, ref) in
             if let error = error{
                 print("Failed to update database values with error: : ", error.localizedDescription)
+        
+                let eventCodeAlert = UIAlertController(title: "Your event code is:", message: "test", preferredStyle: .alert)
+                
+                eventCodeAlert.addAction(UIAlertAction(title: "Yes", style: .default, handler: nil))
+                self.present(eventCodeAlert, animated: true, completion: nil)
+                
                 return
             }
             //you can check console to see if it worked instead of going into firebase
