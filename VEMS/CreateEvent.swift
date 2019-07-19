@@ -107,13 +107,14 @@ class CreateEventController: UIViewController {
             if let error = error{
                 print("Failed to update database values with error: : ", error.localizedDescription)
         
-                let eventCodeAlert = UIAlertController(title: "Your event code is:", message: "test", preferredStyle: .alert)
-                
-                eventCodeAlert.addAction(UIAlertAction(title: "Yes", style: .default, handler: nil))
-                self.present(eventCodeAlert, animated: true, completion: nil)
                 
                 return
             }
+            let alertController = UIAlertController(title: "Your event code is:", message:
+                String(eventCode), preferredStyle: .alert)
+            alertController.addAction(UIAlertAction(title: "Ok", style: .default))
+            
+            self.present(alertController, animated: true, completion: nil)
             //you can check console to see if it worked instead of going into firebase
             print("Test is working")
         })

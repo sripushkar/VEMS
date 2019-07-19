@@ -45,7 +45,6 @@ class HomeController: UIViewController {
         createEvent.layer.cornerRadius = 5
         createEvent.contentEdgeInsets = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
         createEvent.addTarget(self, action: #selector(handleCreateEvent), for: .touchUpInside)
-        createEvent.addTarget(self, action: #selector(eventsDatabase), for: .touchUpInside)
         return createEvent
     }()
     
@@ -62,6 +61,7 @@ class HomeController: UIViewController {
     }()
     
     // Events Database Function
+    /*
     @objc func eventsDatabase(){
         print("/////// eventsDatabase run 1")
         //uid is the unique identifier for the user. this line puts it to a variable
@@ -83,6 +83,7 @@ class HomeController: UIViewController {
             print("Test is working")
         })
     }
+ */
  
     // MARK: - Init
     

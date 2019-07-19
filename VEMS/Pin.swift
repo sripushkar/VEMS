@@ -71,17 +71,24 @@ class PinController: UIViewController {
     }
     
 
-    
+    //VERIFIES IF PIN EXISTS
     @objc func handleJoinEvent() {
-        print("/////// handlejoinevent run")
+        print("handlejoinevent TEST")
         
         let text = PinString.text
         let eventCode = Int(text!)
         print(eventCode as Any)
-        Database.database().reference().child("events").queryOrdered(byChild: "testEvent").queryEqual(toValue: eventCode).observeSingleEvent(of: .value, with: { (snapshot) in
+        Database.database().reference().child("events").queryOrdered(byChild: "Expected Volunteers")
+        Database.database().reference().child("events").queryOrdered(byChild: "Event Code").queryEqual(toValue: eventCode).observeSingleEvent(of: .value, with: { (snapshot) in
             if snapshot.exists() {
                 print("Pin Valid")
                 self.navigationController?.pushViewController(JoinEventController(), animated: true)
+                
+                let expAmtVolunteers = 0
+                let eventDict = ["Expected Volunteers": expAmtVolunteers] as [String : Any]
+                Database.database().reference().child("events").child(text!).updateChildValues(["Expected Volunteers": expAmtVolunteers + 1])
+                
+                
             } else {
                 print("Pin not found.")
                 let alert = UIAlertController(title: "Error", message: "Please enter a valid PIN.", preferredStyle: .alert)

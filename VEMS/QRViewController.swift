@@ -100,6 +100,7 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
     func found(code: String) {
         let codeString = UIAlertController(title: "Website is:", message: code, preferredStyle: .alert)
         self.present(codeString, animated: true, completion: nil)
+        
         guard let userID = Auth.auth().currentUser?.uid else { return }
         let ref = Database.database().reference().child("users").child(userID)
         ref.updateChildValues(["hours": 1, "user showed up?": true])
