@@ -15,6 +15,15 @@
 		FAAF5B1822DA4CC400159208 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA067522DA4B7400E1AEC2 /* AppDelegate.swift */; };
 		FAAF5B1922DA4CC800159208 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA067522DA4B7400E1AEC2 /* AppDelegate.swift */; };
 		FAAF5B1E22DA88E600159208 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAF5B1D22DA88E600159208 /* LoginController.swift */; };
+		FAC20B04230D4E16005A2887 /* NewYorkMedium-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FAC20B01230D4E0F005A2887 /* NewYorkMedium-Regular.otf */; };
+		FAC20B05230D4E19005A2887 /* SF-Compact-Rounded-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = FAC20AFF230D4E0F005A2887 /* SF-Compact-Rounded-Medium.otf */; };
+		FAC20B06230D4E1B005A2887 /* SF-Compact-Rounded-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FAC20B03230D4E0F005A2887 /* SF-Compact-Rounded-Regular.otf */; };
+		FAC20B07230D4E1E005A2887 /* SF-Pro-Rounded-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = FAC20B00230D4E0F005A2887 /* SF-Pro-Rounded-Black.otf */; };
+		FAC20B08230D4E20005A2887 /* SF-Pro-Rounded-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FAC20B02230D4E0F005A2887 /* SF-Pro-Rounded-Regular.otf */; };
+		FAC20B09230D4E2D005A2887 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAC20AFC230D4DF7005A2887 /* Lato-Bold.ttf */; };
+		FAC20B0A230D4E30005A2887 /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAC20AFB230D4DF7005A2887 /* Lato-Italic.ttf */; };
+		FAC20B0B230D4E33005A2887 /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAC20AFD230D4DF7005A2887 /* Lato-Light.ttf */; };
+		FAC20B0C230D4E35005A2887 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FAC20AFE230D4DF7005A2887 /* Lato-Regular.ttf */; };
 		FACD0C4922E021B50088D6B3 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACD0C4822E021B50088D6B3 /* QRViewController.swift */; };
 		FACD0C4F22E0BC7A0088D6B3 /* Homepage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FACD0C4E22E0BC7A0088D6B3 /* Homepage.storyboard */; };
 		FAF1751322DAA1C500BC112C /* SignUpContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF1751222DAA1C500BC112C /* SignUpContoller.swift */; };
@@ -50,6 +59,15 @@
 		8ED225BAF138D8A8BC6FF61C /* Pods_VEMSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VEMSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB15F0C7DEF1E83BA93D04CE /* Pods-VEMSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VEMSTests.release.xcconfig"; path = "Target Support Files/Pods-VEMSTests/Pods-VEMSTests.release.xcconfig"; sourceTree = "<group>"; };
 		FAAF5B1D22DA88E600159208 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		FAC20AFB230D4DF7005A2887 /* Lato-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Italic.ttf"; path = "../../../Brain Benchmark/BrainBenchmark/BrainBenchmark/Fonts/Lato-Italic.ttf"; sourceTree = "<group>"; };
+		FAC20AFC230D4DF7005A2887 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Bold.ttf"; path = "../../../Brain Benchmark/BrainBenchmark/BrainBenchmark/Fonts/Lato-Bold.ttf"; sourceTree = "<group>"; };
+		FAC20AFD230D4DF7005A2887 /* Lato-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Light.ttf"; path = "../../../Brain Benchmark/BrainBenchmark/BrainBenchmark/Fonts/Lato-Light.ttf"; sourceTree = "<group>"; };
+		FAC20AFE230D4DF7005A2887 /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Regular.ttf"; path = "../../../Brain Benchmark/BrainBenchmark/BrainBenchmark/Fonts/Lato-Regular.ttf"; sourceTree = "<group>"; };
+		FAC20AFF230D4E0F005A2887 /* SF-Compact-Rounded-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Compact-Rounded-Medium.otf"; path = "../../../../Library/Fonts/SF-Compact-Rounded-Medium.otf"; sourceTree = "<group>"; };
+		FAC20B00230D4E0F005A2887 /* SF-Pro-Rounded-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Rounded-Black.otf"; path = "../../../../Library/Fonts/SF-Pro-Rounded-Black.otf"; sourceTree = "<group>"; };
+		FAC20B01230D4E0F005A2887 /* NewYorkMedium-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NewYorkMedium-Regular.otf"; path = "../../../../Library/Fonts/NewYorkMedium-Regular.otf"; sourceTree = "<group>"; };
+		FAC20B02230D4E0F005A2887 /* SF-Pro-Rounded-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Pro-Rounded-Regular.otf"; path = "../../../../Library/Fonts/SF-Pro-Rounded-Regular.otf"; sourceTree = "<group>"; };
+		FAC20B03230D4E0F005A2887 /* SF-Compact-Rounded-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-Compact-Rounded-Regular.otf"; path = "../../../../Library/Fonts/SF-Compact-Rounded-Regular.otf"; sourceTree = "<group>"; };
 		FACD0C4822E021B50088D6B3 /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
 		FACD0C4E22E0BC7A0088D6B3 /* Homepage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Homepage.storyboard; sourceTree = SOURCE_ROOT; };
 		FAF1751222DAA1C500BC112C /* SignUpContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpContoller.swift; sourceTree = "<group>"; };
@@ -109,6 +127,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FAC20AFA230D4DE2005A2887 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FAC20B01230D4E0F005A2887 /* NewYorkMedium-Regular.otf */,
+				FAC20AFF230D4E0F005A2887 /* SF-Compact-Rounded-Medium.otf */,
+				FAC20B03230D4E0F005A2887 /* SF-Compact-Rounded-Regular.otf */,
+				FAC20B00230D4E0F005A2887 /* SF-Pro-Rounded-Black.otf */,
+				FAC20B02230D4E0F005A2887 /* SF-Pro-Rounded-Regular.otf */,
+				FAC20AFC230D4DF7005A2887 /* Lato-Bold.ttf */,
+				FAC20AFB230D4DF7005A2887 /* Lato-Italic.ttf */,
+				FAC20AFD230D4DF7005A2887 /* Lato-Light.ttf */,
+				FAC20AFE230D4DF7005A2887 /* Lato-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		FAFA066922DA4B7400E1AEC2 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +166,7 @@
 		FAFA067422DA4B7400E1AEC2 /* VEMS */ = {
 			isa = PBXGroup;
 			children = (
+				FAC20AFA230D4DE2005A2887 /* Fonts */,
 				FACD0C4E22E0BC7A0088D6B3 /* Homepage.storyboard */,
 				FAFA067522DA4B7400E1AEC2 /* AppDelegate.swift */,
 				FAAF5B1D22DA88E600159208 /* LoginController.swift */,
@@ -141,11 +176,11 @@
 				788D24AC22DF5FD500C8CC90 /* Pin.swift */,
 				78D9A0CC22DE45C600308498 /* JoinEvent.swift */,
 				FAF1751622DAA21500BC112C /* Extensions.swift */,
+				FACD0C4822E021B50088D6B3 /* QRViewController.swift */,
 				FAFA067E22DA4B7500E1AEC2 /* LaunchScreen.storyboard */,
 				FAFA067922DA4B7400E1AEC2 /* Main.storyboard */,
 				FAFA067C22DA4B7500E1AEC2 /* Assets.xcassets */,
 				FAFA068122DA4B7500E1AEC2 /* Info.plist */,
-				FACD0C4822E021B50088D6B3 /* QRViewController.swift */,
 				FAFA069522DA4C4D00E1AEC2 /* GoogleService-Info.plist */,
 			);
 			path = VEMS;
@@ -247,11 +282,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAFA068022DA4B7500E1AEC2 /* LaunchScreen.storyboard in Resources */,
+				FAC20B06230D4E1B005A2887 /* SF-Compact-Rounded-Regular.otf in Resources */,
+				FAC20B0A230D4E30005A2887 /* Lato-Italic.ttf in Resources */,
+				FAC20B07230D4E1E005A2887 /* SF-Pro-Rounded-Black.otf in Resources */,
+				FAC20B04230D4E16005A2887 /* NewYorkMedium-Regular.otf in Resources */,
 				FACD0C4F22E0BC7A0088D6B3 /* Homepage.storyboard in Resources */,
 				FAFA069622DA4C4D00E1AEC2 /* GoogleService-Info.plist in Resources */,
+				FAC20B0C230D4E35005A2887 /* Lato-Regular.ttf in Resources */,
+				FAC20B08230D4E20005A2887 /* SF-Pro-Rounded-Regular.otf in Resources */,
+				FAC20B09230D4E2D005A2887 /* Lato-Bold.ttf in Resources */,
 				FAFA069922DA4C5500E1AEC2 /* GoogleService-Info.plist in Resources */,
+				FAC20B05230D4E19005A2887 /* SF-Compact-Rounded-Medium.otf in Resources */,
 				FAFA067D22DA4B7500E1AEC2 /* Assets.xcassets in Resources */,
 				FAFA067B22DA4B7400E1AEC2 /* Main.storyboard in Resources */,
+				FAC20B0B230D4E33005A2887 /* Lato-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

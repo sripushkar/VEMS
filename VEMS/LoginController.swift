@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import FlatUIKit
 
 class LoginController: UIViewController {
     
@@ -36,6 +37,7 @@ class LoginController: UIViewController {
     
     lazy var emailTextField: UITextField = {
         let tf = UITextField()
+
         return tf.textField(withPlaceolder: "Email", isSecureTextEntry: false)
     }()
     
@@ -44,14 +46,17 @@ class LoginController: UIViewController {
         return tf.textField(withPlaceolder: "Password", isSecureTextEntry: true)
     }()
     
-    let loginButton: UIButton = {
-        let button = UIButton(type: .system)
-        button.setTitle("LOG IN", for: .normal)
+    let loginButton: FUIButton = {
+        let button = FUIButton(type: .custom)
+        button.cornerRadius = 5.0
+        button.shadowHeight = 3.0
+        button.setTitle("Log In", for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 18)
         button.setTitleColor(UIColor.mainBlue(), for: .normal)
-        button.backgroundColor = .white
+        button.buttonColor = UIColor.white
+        button.shadowColor = UIColor.turquoise()
         button.addTarget(self, action: #selector(handleLogin), for: .touchUpInside)
-        button.layer.cornerRadius = 5
+        
         return button
     }()
     

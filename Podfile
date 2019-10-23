@@ -11,8 +11,9 @@ target 'VEMS' do
   pod 'Firebase/Database'
   pod 'Firebase/Firestore'
   pod 'Firebase/Analytics'
-
-
+  pod 'FlatUIKit'
+  pod 'SkyFloatingLabelTextField'
+  pod 'GoogleSignIn'
   target 'VEMSTests' do
     inherit! :search_paths
     # Pods for testing

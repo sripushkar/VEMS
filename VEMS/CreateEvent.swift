@@ -11,10 +11,20 @@ import Firebase
 class CreateEventController: UIViewController {
     
     // MARK: - Properties
+    
+    let logoImageView: UIImageView = {
+        let iv = UIImageView()
+        iv.contentMode = .scaleAspectFill
+        iv.clipsToBounds = true
+        //SETS LOGO IMAGE
+        iv.image = UIImage(named: "SmallLogo")
+        return iv
+    }()
+    
     let scannerOpen: UIButton = {
         let generatecode = UIButton(type: .system)
         generatecode.setTitle("Scan existing event", for: .normal)
-        generatecode.titleLabel?.font = UIFont.systemFont(ofSize: 16)
+        generatecode.titleLabel?.font = UIFont.systemFont(ofSize: 44)
         generatecode.setTitleColor(UIColor.mainBlue(), for: .normal)
         generatecode.backgroundColor = .white
         generatecode.layer.cornerRadius = 5
@@ -26,7 +36,7 @@ class CreateEventController: UIViewController {
     let newEvent: UIButton = {
         let generatecode = UIButton(type: .system)
         generatecode.setTitle("Create new event", for: .normal)
-        generatecode.titleLabel?.font = UIFont.systemFont(ofSize: 16)
+        generatecode.titleLabel?.font = UIFont.systemFont(ofSize: 44)
         generatecode.setTitleColor(UIColor.mainBlue(), for: .normal)
         generatecode.backgroundColor = .white
         generatecode.layer.cornerRadius = 5
@@ -134,6 +144,21 @@ class CreateEventController: UIViewController {
          navigationController?.navigationBar.barTintColor = UIColor.magenta
          */
         
+        view.addSubview(logoImageView)
+        view.addSubview(stackView)
+        
+        logoImageView.anchor(top: nil, left: nil, bottom: stackView.topAnchor, right: nil, paddingTop: 0, paddingLeft: 0, paddingBottom: 30, paddingRight: 0, width: 0, height: 0)
+        logoImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        
+        stackView.anchor(top: nil, left: nil, bottom: nil, right: nil, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 0)
+        stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        /*
+        view.addSubview(logoImageView)
+        logoImageView.anchor(top: view.topAnchor, left: nil, bottom: nil, right: nil, paddingTop: 30, paddingLeft: 0, paddingBottom: 30, paddingRight: 0, width: 0, height: 0)
+        logoImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        
+        
         
         view.addSubview(stackView)
         stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
@@ -142,7 +167,7 @@ class CreateEventController: UIViewController {
         stackView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = false
         stackView.heightAnchor.constraint(equalToConstant: view.frame.height/2)
         stackView.widthAnchor.constraint(equalToConstant: view.frame.width/1)
-        
+        */
     }
 
 }

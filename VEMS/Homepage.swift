@@ -7,11 +7,22 @@
 //
 import UIKit
 import Firebase
+import FlatUIKit
 
 class HomeController: UIViewController {
     
+    
+    
     // MARK: - Properties
    
+    let logoImageView: UIImageView = {
+        let iv = UIImageView()
+        iv.contentMode = .scaleAspectFill
+        iv.clipsToBounds = true
+        //SETS LOGO IMAGE
+        iv.image = UIImage(named: "SmallLogo")
+        return iv
+    }()
     
     var welcomeLabel: UILabel = {
         let label = UILabel()
@@ -19,6 +30,7 @@ class HomeController: UIViewController {
         label.font = UIFont.systemFont(ofSize: 28)
         label.translatesAutoresizingMaskIntoConstraints = false
         label.alpha = 0
+        label.text = "Welcome to VEMS!"
         return label
     }()
     
@@ -36,24 +48,31 @@ class HomeController: UIViewController {
     }()
     
     
-    let createEventButton: UIButton = {
-        let createEvent = UIButton(type: .system)
+    let createEventButton: FUIButton = {
+        let createEvent = FUIButton(type: .system)
+        createEvent.cornerRadius = 5.0
+        createEvent.shadowHeight = 3.0
         createEvent.setTitle("Create Event", for: .normal)
         createEvent.titleLabel?.font = UIFont.systemFont(ofSize: 44)
         createEvent.setTitleColor(UIColor.mainBlue(), for: .normal)
-        createEvent.backgroundColor = .white
+        createEvent.buttonColor = .white
+        createEvent.shadowColor = UIColor.turquoise()
         createEvent.layer.cornerRadius = 5
         createEvent.contentEdgeInsets = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+        
         createEvent.addTarget(self, action: #selector(handleCreateEvent), for: .touchUpInside)
         return createEvent
     }()
     
-    let joinEventButton: UIButton = {
-        let joinEvent = UIButton(type: .system)
+    let joinEventButton: FUIButton = {
+        let joinEvent = FUIButton(type: .system)
+        joinEvent.cornerRadius = 5.0
+        joinEvent.shadowHeight = 3.0
         joinEvent.setTitle("Join Event", for: .normal)
         joinEvent.titleLabel?.font = UIFont.systemFont(ofSize: 44)
         joinEvent.setTitleColor(UIColor.mainBlue(), for: .normal)
-        joinEvent.backgroundColor = .white
+        joinEvent.buttonColor = .white
+        joinEvent.shadowColor = UIColor.turquoise()
         joinEvent.layer.cornerRadius = 5
         joinEvent.contentEdgeInsets = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
         joinEvent.addTarget(self, action: #selector(handlePin), for: .touchUpInside)
@@ -146,15 +165,30 @@ class HomeController: UIViewController {
     func configureViewComponents(){
         self.view.backgroundColor = UIColor(patternImage: UIImage(named: "065 Burning Spring.png")!)
         
+        
+        
+        
         navigationItem.title = "Welcome to VEMS"
         
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "baseline_arrow_back_white_24dp"), style: .plain, target: self, action: #selector(handleSignOut))
+ 
         /*
         navigationItem.leftBarButtonItem?.tintColor = .white
         navigationController?.navigationBar.barTintColor = UIColor.magenta
         */
         
+        view.addSubview(logoImageView)
+        view.addSubview(stackView)
+        
+        logoImageView.anchor(top: nil, left: nil, bottom: stackView.topAnchor, right: nil, paddingTop: 0, paddingLeft: 0, paddingBottom: 30, paddingRight: 0, width: 0, height: 0)
+         logoImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        
+        stackView.anchor(top: nil, left: nil, bottom: nil, right: nil, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 0)
+        stackView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        stackView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        
+        /*
         view.addSubview(welcomeLabel)
         welcomeLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         welcomeLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
@@ -166,7 +200,7 @@ class HomeController: UIViewController {
         stackView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = false
         stackView.heightAnchor.constraint(equalToConstant: view.frame.height/2)
         stackView.widthAnchor.constraint(equalToConstant: view.frame.width/1)
-        
+        */
 
         /*
         view.addSubview(joinEventButton)

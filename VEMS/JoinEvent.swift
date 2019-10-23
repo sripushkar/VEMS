@@ -12,6 +12,9 @@ class JoinEventController: UIViewController {
     
     // MARK: - Properties
     
+    var ref: DatabaseReference! = Database.database().reference()
+    
+    
     
     lazy var stackView: UIStackView = {
         let order =  UIStackView(arrangedSubviews: [CodeString, GenerateCodeButton, SaveImageButton])
@@ -103,9 +106,10 @@ class JoinEventController: UIViewController {
     // MARK: - Helper Functions
     @objc func handleGeneratingCode() {
         
-        let myString = CodeString.text
+        let userID = Auth.auth().currentUser?.uid
+        //let myString = CodeString.text
             
-        let data = myString?.data(using: .ascii, allowLossyConversion: false)
+        let data = userID?.data(using: .ascii, allowLossyConversion: false)
             let filter = CIFilter(name: "CIQRCodeGenerator")
             filter?.setValue(data, forKey: "InputMessage")
             
