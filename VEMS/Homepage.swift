@@ -37,7 +37,7 @@ class HomeController: UIViewController {
     //BUTTONS STACKVIEW
     
     lazy var stackView: UIStackView = {
-        let order =  UIStackView(arrangedSubviews: [createEventButton, joinEventButton])
+        let order =  UIStackView(arrangedSubviews: [createEventButton, joinEventButton, trackHoursButton, trackVolunteersButton])
         order.translatesAutoresizingMaskIntoConstraints = false
         order.axis = .vertical
         order.spacing = 10
@@ -79,6 +79,38 @@ class HomeController: UIViewController {
         return joinEvent
     }()
     
+    let trackHoursButton: FUIButton = {
+        let trackHours = FUIButton(type: .system)
+        trackHours.cornerRadius = 5.0
+        trackHours.shadowHeight = 3.0
+        trackHours.setTitle("Track Hours", for: .normal)
+        trackHours.titleLabel?.font = UIFont.systemFont(ofSize: 44)
+        trackHours.setTitleColor(UIColor.mainBlue(), for: .normal)
+        trackHours.buttonColor = .white
+        trackHours.shadowColor = UIColor.turquoise()
+        trackHours.layer.cornerRadius = 5
+        trackHours.contentEdgeInsets = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+        trackHours.addTarget(self, action: #selector(checkHoursPush), for: .touchUpInside)
+        return trackHours
+    }()
+    
+    let trackVolunteersButton: FUIButton = {
+        let trackVolunteers = FUIButton(type: .system)
+        trackVolunteers.cornerRadius = 5.0
+        trackVolunteers.shadowHeight = 3.0
+        trackVolunteers.setTitle("Track Event", for: .normal)
+        trackVolunteers.titleLabel?.font = UIFont.systemFont(ofSize: 44)
+        trackVolunteers.setTitleColor(UIColor.mainBlue(), for: .normal)
+        trackVolunteers.buttonColor = .white
+        trackVolunteers.shadowColor = UIColor.turquoise()
+        trackVolunteers.layer.cornerRadius = 5
+        trackVolunteers.contentEdgeInsets = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+        trackVolunteers.addTarget(self, action: #selector(trackEventPush), for: .touchUpInside)
+        return trackVolunteers
+    }()
+    
+    
+    
     // Events Database Function
     /*
     @objc func eventsDatabase(){
@@ -116,6 +148,14 @@ class HomeController: UIViewController {
     
     @objc func handleCreateEvent() {
         navigationController?.pushViewController(CreateEventController(), animated: true)
+    }
+    
+    @objc func checkHoursPush(){
+        navigationController?.pushViewController(hoursController(), animated: true)
+    }
+    
+    @objc func trackEventPush(){
+        navigationController?.pushViewController(trackVolunteersController(), animated: true)
     }
     
     @objc func handlePin() {
@@ -181,7 +221,7 @@ class HomeController: UIViewController {
         view.addSubview(logoImageView)
         view.addSubview(stackView)
         
-        logoImageView.anchor(top: nil, left: nil, bottom: stackView.topAnchor, right: nil, paddingTop: 0, paddingLeft: 0, paddingBottom: 30, paddingRight: 0, width: 0, height: 0)
+        logoImageView.anchor(top: nil, left: nil, bottom: stackView.topAnchor, right: nil, paddingTop: 0, paddingLeft: 0, paddingBottom: 10, paddingRight: 0, width: 0, height: 0)
          logoImageView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         
         stackView.anchor(top: nil, left: nil, bottom: nil, right: nil, paddingTop: 0, paddingLeft: 0, paddingBottom: 0, paddingRight: 0, width: 0, height: 0)

@@ -12,6 +12,8 @@
 		78D9A0CD22DE45C600308498 /* JoinEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D9A0CC22DE45C600308498 /* JoinEvent.swift */; };
 		E528FB44814884C1E30A5983 /* Pods_VEMS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 597BC0D15ACB8CBDEC96419A /* Pods_VEMS.framework */; };
 		EFD4254C7C5DE1E7B05101EF /* Pods_VEMSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED225BAF138D8A8BC6FF61C /* Pods_VEMSTests.framework */; };
+		FA5539CC2361A2450084353F /* CheckHours.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5539CB2361A2450084353F /* CheckHours.swift */; };
+		FA5539CE2361A4150084353F /* CheckVolunteers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5539CD2361A4150084353F /* CheckVolunteers.swift */; };
 		FAAF5B1822DA4CC400159208 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA067522DA4B7400E1AEC2 /* AppDelegate.swift */; };
 		FAAF5B1922DA4CC800159208 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA067522DA4B7400E1AEC2 /* AppDelegate.swift */; };
 		FAAF5B1E22DA88E600159208 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAF5B1D22DA88E600159208 /* LoginController.swift */; };
@@ -58,6 +60,8 @@
 		78D9A0CC22DE45C600308498 /* JoinEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinEvent.swift; sourceTree = "<group>"; };
 		8ED225BAF138D8A8BC6FF61C /* Pods_VEMSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VEMSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB15F0C7DEF1E83BA93D04CE /* Pods-VEMSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VEMSTests.release.xcconfig"; path = "Target Support Files/Pods-VEMSTests/Pods-VEMSTests.release.xcconfig"; sourceTree = "<group>"; };
+		FA5539CB2361A2450084353F /* CheckHours.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckHours.swift; sourceTree = "<group>"; };
+		FA5539CD2361A4150084353F /* CheckVolunteers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckVolunteers.swift; sourceTree = "<group>"; };
 		FAAF5B1D22DA88E600159208 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		FAC20AFB230D4DF7005A2887 /* Lato-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Italic.ttf"; path = "../../../Brain Benchmark/BrainBenchmark/BrainBenchmark/Fonts/Lato-Italic.ttf"; sourceTree = "<group>"; };
 		FAC20AFC230D4DF7005A2887 /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Lato-Bold.ttf"; path = "../../../Brain Benchmark/BrainBenchmark/BrainBenchmark/Fonts/Lato-Bold.ttf"; sourceTree = "<group>"; };
@@ -173,6 +177,8 @@
 				FAF1751222DAA1C500BC112C /* SignUpContoller.swift */,
 				FAF1751422DAA1F200BC112C /* Homepage.swift */,
 				78D9A0CA22DE45AF00308498 /* CreateEvent.swift */,
+				FA5539CB2361A2450084353F /* CheckHours.swift */,
+				FA5539CD2361A4150084353F /* CheckVolunteers.swift */,
 				788D24AC22DF5FD500C8CC90 /* Pin.swift */,
 				78D9A0CC22DE45C600308498 /* JoinEvent.swift */,
 				FAF1751622DAA21500BC112C /* Extensions.swift */,
@@ -396,6 +402,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA5539CC2361A2450084353F /* CheckHours.swift in Sources */,
 				FAF1751322DAA1C500BC112C /* SignUpContoller.swift in Sources */,
 				78D9A0CB22DE45AF00308498 /* CreateEvent.swift in Sources */,
 				FAF1751722DAA21500BC112C /* Extensions.swift in Sources */,
@@ -404,6 +411,7 @@
 				FACD0C4922E021B50088D6B3 /* QRViewController.swift in Sources */,
 				FAAF5B1922DA4CC800159208 /* AppDelegate.swift in Sources */,
 				78D9A0CD22DE45C600308498 /* JoinEvent.swift in Sources */,
+				FA5539CE2361A4150084353F /* CheckVolunteers.swift in Sources */,
 				FAF1751522DAA1F200BC112C /* Homepage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

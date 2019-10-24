@@ -46,7 +46,6 @@ class CreateEventController: UIViewController {
     }()
     
     
-    
     var createLabel: UILabel = {
         let label = UILabel()
         label.textColor = .white
@@ -105,12 +104,14 @@ class CreateEventController: UIViewController {
     
     // MARK: - Helper Functions
     
+
+    
     @objc func databaseCreateEvent() {
         
-        var eventCode = Int.random(in: 100000 ... 999999)
+        let eventCode = Int.random(in: 100000 ... 999999)
         print(eventCode)
-        var expAmtVolunteers = 0
-        var actualAmount = 0
+        let expAmtVolunteers = 0
+        let actualAmount = 0
         let eventDict = ["Event Code": eventCode, "Expected Volunteers": expAmtVolunteers, "Actual Amount of Volunteers": actualAmount] as [String : Any]
         //this updates it to the database. call this function into a button press, submit button, etc
         Database.database().reference().child("events").childByAutoId().updateChildValues(eventDict, withCompletionBlock: { (error, ref) in
@@ -120,15 +121,22 @@ class CreateEventController: UIViewController {
                 
                 return
             }
+            
+            
+            
             let alertController = UIAlertController(title: "Your event code is:", message:
                 String(eventCode), preferredStyle: .alert)
             alertController.addAction(UIAlertAction(title: "Ok", style: .default))
-            
+            alertController.addTextField { textField in
+                textField.placeholder = "How many hours is this event?"
+                textField.textAlignment = .center
+            }
             self.present(alertController, animated: true, completion: nil)
             //you can check console to see if it worked instead of going into firebase
             print("Test is working")
         })
     }
+    
     
     @objc func moveToScanner() {
         navigationController?.pushViewController(ScannerViewController(), animated: true)

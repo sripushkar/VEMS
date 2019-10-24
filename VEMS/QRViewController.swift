@@ -19,6 +19,9 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
         super.viewDidLoad()
         
         view.backgroundColor = UIColor.black
+        navigationItem.title = "Scan Code"
+        
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "baseline_arrow_back_white_24dp"), style: .plain, target: self, action: #selector(backPage))
         captureSession = AVCaptureSession()
         
         guard let videoCaptureDevice = AVCaptureDevice.default(for: .video) else { return }
@@ -64,8 +67,13 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
         captureSession = nil
     }
     
+    @objc func backPage(){
+        navigationController?.popViewController(animated: true)
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
         
         if (captureSession?.isRunning == false) {
             captureSession.startRunning()
@@ -98,7 +106,7 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
     
     
     func found(code: String) {
-        let codeString = UIAlertController(title: "Website is:", message: code, preferredStyle: .alert)
+        let codeString = UIAlertController(title: "Scanned", message: nil, preferredStyle: .alert)
         self.present(codeString, animated: true, completion: nil)
         
         guard let userID = Auth.auth().currentUser?.uid else { return }
