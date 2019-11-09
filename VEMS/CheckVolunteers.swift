@@ -25,7 +25,7 @@ class trackVolunteersController: UIViewController{
         code.textColor = .white
         code.font = UIFont.systemFont(ofSize: 28)
         code.translatesAutoresizingMaskIntoConstraints = false
-        code.text = "Event Code: xxxxxx"
+        code.text = "Event Code: 547563"
         return code
     }()
     

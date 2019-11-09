@@ -25,7 +25,7 @@ class hoursController: UIViewController{
         label.textColor = .white
         label.font = UIFont.systemFont(ofSize: 28)
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.text = "Email: test@gmail.com"
+        label.text = "Email: volunteer@test.com"
         return label
     }()
     
@@ -34,7 +34,7 @@ class hoursController: UIViewController{
         code.textColor = .white
         code.font = UIFont.systemFont(ofSize: 28)
         code.translatesAutoresizingMaskIntoConstraints = false
-        code.text = "Event Code: xxxxxx"
+        code.text = "Event Code: 547563"
         return code
     }()
     
@@ -52,7 +52,7 @@ class hoursController: UIViewController{
         hours.textColor = .white
         hours.font = UIFont.systemFont(ofSize: 28)
         hours.translatesAutoresizingMaskIntoConstraints = false
-        hours.text = "Hours: 0"
+        hours.text = "Hours: 3"
         return hours
     }()
     
